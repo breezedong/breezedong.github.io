@@ -7,13 +7,18 @@
 
     
 
-    <title>test1 | </title>
+    <title></title>
     <meta name="author" content="Breeze Dong">
+    
+    <meta name="description" content="深度学习学习笔记
+最近研究一篇论文，使用RNN（recurrence neural networks）识别二进制代码中函数的方法，考虑到相关的CNN，LSTM，t-SNE，LDA等名词和相关算法一直碰到，避无可避，遂整体的学习了一下DeepLearning相关的知识。
+
+UFLDL教程学习了UFLD">
     
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta property="og:title" content="test1"/>
+    
     <meta property="og:site_name" content="Breeze Dong&#39;s Blog"/>
 
     
@@ -211,22 +216,83 @@
             <div class="article-title">
                 
     
-        <h1>test1</h1>
+        <h1>无题</h1>
     
 
 
             </div>
-            <time class="pink-link-context" datetime="2016-05-25T01:16:25.000Z"><a href="/2016/05/25/test1/">2016-05-25</a></time>
+            <time class="pink-link-context" datetime="2016-05-25T08:44:40.218Z"><a href="/2016/05/25/DeepLearningnotes/">2016-05-25</a></time>
 
             
 
             <div class="toc pink-link-context hide-on-med-and-down">
-    
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#深度学习学习笔记"><span class="section table-of-contents-text">深度学习学习笔记</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#UFLDL教程"><span class="section table-of-contents-text">UFLDL教程</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#zouxy09深度学习笔记整理系列博客"><span class="section table-of-contents-text">zouxy09深度学习笔记整理系列博客</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#背景"><span class="section table-of-contents-text">背景</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#特征表示"><span class="section table-of-contents-text">特征表示</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#浅层学习与深度学习"><span class="section table-of-contents-text">浅层学习与深度学习</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#Shallow-Learning"><span class="section table-of-contents-text">Shallow Learning</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#Deep-Learning"><span class="section table-of-contents-text">Deep Learning</span></a></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#卷积神经网络"><span class="section table-of-contents-text">卷积神经网络</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#总结与展望"><span class="section table-of-contents-text">总结与展望</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#总结"><span class="section table-of-contents-text">总结</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#展望"><span class="section table-of-contents-text">展望</span></a></li></ol></li></ol></li></ol></li></ol>
 </div>
 
 
             <div class="entry pink-link-context">
-                
+                <h1 id="深度学习学习笔记"><a href="#深度学习学习笔记" class="headerlink" title="深度学习学习笔记"></a>深度学习学习笔记</h1><blockquote>
+<p>最近研究一篇论文，使用RNN（recurrence neural networks）识别二进制代码中函数的方法，考虑到相关的CNN，LSTM，t-SNE，LDA等名词和相关算法一直碰到，避无可避，遂整体的学习了一下DeepLearning相关的知识。</p>
+</blockquote>
+<h2 id="UFLDL教程"><a href="#UFLDL教程" class="headerlink" title="UFLDL教程"></a>UFLDL教程</h2><p>学习了<a href="http://ufldl.stanford.edu/wiki/index.php/UFLDL%E6%95%99%E7%A8%8B" target="_blank" rel="external">UFLDL教程</a>，理解深度学习相关的概念与思想，主要包括基本概念、数据处理以及深度学习三个部分，并画出思维导图如下：</p>
+<ul>
+<li>基本概念：主要包含参数，激励函数，代价函数等</li>
+<li>相关数据处理：PCA，whitening，样本的均值与方差等</li>
+<li>深度学习：深层神经网络，根据特性，有CNN,RNN等</li>
+</ul>
+<p><img src="https://git.oschina.net/breezedong/figure_bed/raw/master/ANN.png" alt="image"></p>
+<p>从上面教程中，我学习到了神经网络的模型的基本概念、模型参数以及训练方法：<strong>通过初始化参数，进行前向传递，得到初始输出结果，根据初始输出与标准输出构造代价函数，通过梯度下降与反向传播求导的方法，调整参数，迭代直至参数最优</strong><br>教程主要侧重神经网络的数学求解。</p>
+<h2 id="zouxy09深度学习笔记整理系列博客"><a href="#zouxy09深度学习笔记整理系列博客" class="headerlink" title="zouxy09深度学习笔记整理系列博客"></a>zouxy09深度学习笔记整理系列博客</h2><p>而后，学习<a href="http://blog.csdn.net/zouxy09/article/details/8775488" target="_blank" rel="external">zouxy09</a>深度学习笔记整理系列博客，从物理意义上去理解深度学习。</p>
+<h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>机器学习的目的就是使计算机模拟人类的学习方式，获得知识与技能，解决问题。<br>机器学习在很多领域都有着应用：</p>
+<ul>
+<li>image: computer vision</li>
+<li>voice: speech recognition</li>
+<li>text: natural language process</li>
+</ul>
+<p>他们当前都有着很类似的处理过程：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">low-level-sensing--&gt;pre-processing</span><br><span class="line"></span><br><span class="line">pre-processing--&gt;feature-extract</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">feature-extract--&gt;feature-selection</span><br><span class="line"></span><br><span class="line">feature-selection--&gt;inference-prediction-recognition</span><br></pre></td></tr></table></figure>
+<p>即：通过传感器收集数据，经过数据预处理，得到可输入数据，经过特征工程，对数据特征进行抽取，选择，得到表征特点的特征，输入系统，算法进行推理，预测和识别等任务。</p>
+<p>当前的机器学习，虽然在监督学习方法上，取得了很好的成果，但学习前往往需要在数据预处理、特征抽取和特征选择三个步骤耗费大量的人工精力。人工特征工程，是一件非常耗时耗力、启发式（需要专业的知识）的方法，选取的结果在一定程度上依赖经验和运气。</p>
+<p>在此背景下，神经网络结合人脑视觉原理，将神经网络与层层抽象，形成深层神经网络；加上卷积等局部连接的方法，使得深层神经网络的参数训练得以实现。深度学习最大的优势在于，它可以让机器来学习特征，从而解决前面的特征工程问题。<strong>深度学习亦可称为unsupervised feature learning</strong>.</p>
+<h3 id="特征表示"><a href="#特征表示" class="headerlink" title="特征表示"></a>特征表示</h3><p>1995 年前后，Bruno Olshausen和 David Field 两位学者做了一个实验。<br>收集很多黑白风景照，抽取了400张16*16的碎片：S[i]i=0,…,399，然后随意的抽取了一张碎片T。<br>通过叠加的方法，抽取一组S[i]中碎片拟合T。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sum(a[k]*S[k]) -&gt; T</span><br></pre></td></tr></table></figure>
+<p>其中，a[k]为叠加权重。<br>为解决这个问题，Bruno Olshausen和 David Field 发明了一个算法，稀疏编码（Sparse Coding）。稀疏编码是一个重复迭代的过程，每次迭代分两步：</p>
+<ol>
+<li><p>选择一组 S[k]，然后调整 a[k]，使得Sum_k (a[k] * S[k]) 最接近 T。</p>
+</li>
+<li><p>固定住 a[k]，在 400个碎片中，选择其它更合适的碎片S’[k]，替代原先的 S[k]，使得Sum_k (a[k] * S’[k]) 最接近 T。</p>
+</li>
+</ol>
+<p>经过几次迭代后，最佳的 S[k] 组合，被遴选出来了。令人惊奇的是，被选中的 S[k]，基本上都是照片上不同物体的边缘线，这些线段形状相似，区别在于方向。<br><strong>也就是说，复杂图形，往往由一些基本结构组成<br>。</strong><br>如下图所示：<img src="https://git.oschina.net/breezedong/figure_bed/raw/master/dl-feature-combine.jpg" alt="image"></p>
+<p> 小块的图形可以由基本edge构成，更结构化，更复杂的，具有概念性的图形如何表示呢？这就需要更高层次的特征表示，比如V2，V4。因此V1看像素级是像素级。V2看V1是像素级，这个是层次递进的，高层表达由底层表达的组合而成。专业点说就是基basis。V1取提出的basis是边缘，然后V2层是V1层这些basis的组合，这时候V2区得到的又是高一层的basis。即上一层的basis组合的结果，上上层又是上一层的组合basis……（所以有大牛说Deep learning就是“搞基”，因为难听，所以美其名曰Deep learning或者Unsupervised Feature Learning）</p>
+<p>从文本来说，一个doc表示什么意思？我们描述一件事情，用什么来表示比较合适？用一个一个字嘛，我看不是，字就是像素级别了，起码应该是term，换句话说每个doc都由term构成，但这样表示概念的能力就够了嘛，可能也不够，需要再上一步，达到topic级，有了topic，再到doc就合理。但每个层次的数量差距很大，比如doc表示的概念-&gt;topic（千-万量级）-&gt;term（10万量级）-&gt;word（百万量级）。</p>
+<p>一个人在看一个doc的时候，眼睛看到的是word，由这些word在大脑里自动切词形成term，在按照概念组织的方式，先验的学习，得到topic，然后再进行高层次的learning。 </p>
+<h3 id="浅层学习与深度学习"><a href="#浅层学习与深度学习" class="headerlink" title="浅层学习与深度学习"></a>浅层学习与深度学习</h3><h4 id="Shallow-Learning"><a href="#Shallow-Learning" class="headerlink" title="Shallow Learning"></a>Shallow Learning</h4><p>浅层学习是机器学习的第一次浪潮。</p>
+<p>20世纪80年代末期，用于人工神经网络的反向传播算法（也叫Back Propagation算法或者BP算法）的发明，给机器学习带来了希望，掀起了基于统计模型的机器学习热潮。这个热潮一直持续到今天。人们发现，利用BP算法可以让一个人工神经网络模型从大量训练样本中学习统计规律，从而对未知事件做预测。这种基于统计的机器学习方法比起过去基于人工规则的系统，在很多方面显出优越性。这个时候的人工神经网络，虽也被称作多层感知机（Multi-layer Perceptron），但实际是种只含有一层隐层节点的浅层模型。</p>
+<p>20世纪90年代，各种各样的浅层机器学习模型相继被提出，例如支撑向量机（SVM，Support Vector Machines）、 Boosting、最大熵方法（如LR，Logistic Regression）等。这些模型的结构基本上可以看成带有一层隐层节点（如SVM、Boosting），或没有隐层节点（如LR）。这些模型无论是在理论分析还是应用中都获得了巨大的成功。相比之下，由于理论分析的难度大，训练方法又需要很多经验和技巧，这个时期浅层人工神经网络反而相对沉寂。</p>
+<h4 id="Deep-Learning"><a href="#Deep-Learning" class="headerlink" title="Deep Learning"></a>Deep Learning</h4><p>深度学习是机器学习的第二次浪潮。</p>
+<p> 2006年，加拿大多伦多大学教授、机器学习领域的泰斗Geoffrey Hinton和他的学生RuslanSalakhutdinov在《科学》上发表了一篇文章，开启了深度学习在学术界和工业界的浪潮。这篇文章有两个主要观点：1）多隐层的人工神经网络具有优异的特征学习能力，学习得到的特征对数据有更本质的刻画，从而有利于可视化或分类；2）深度神经网络在训练上的难度，可以通过“逐层初始化”（layer-wise pre-training）来有效克服，在这篇文章中，逐层初始化是通过无监督学习实现的。</p>
+<p>当前多数分类、回归等学习方法为浅层结构算法，其局限性在于有限样本和计算单元情况下对复杂函数的表示能力有限，针对复杂分类问题其泛化能力受到一定制约。深度学习可通过学习一种深层非线性网络结构，实现复杂函数逼近，表征输入数据分布式表示，并展现了强大的从少数样本集中学习数据集本质特征的能力。（多层的好处是可以用较少的参数表示复杂的函数）</p>
+<p>深度学习的实质，是通过构建具有很多隐层的机器学习模型和海量的训练数据，来学习更有用的特征，从而最终提升分类或预测的准确性。因此，“深度模型”是手段，“特征学习”是目的。区别于传统的浅层学习，深度学习的不同在于：1）强调了模型结构的深度，通常有5层、6层，甚至10多层的隐层节点；2）明确突出了特征学习的重要性，也就是说，通过逐层特征变换，将样本在原空间的特征表示变换到一个新特征空间，从而使分类或预测更加容易。与人工规则构造特征的方法相比，利用大数据来学习特征，更能够刻画数据的丰富内在信息。</p>
+<h3 id="卷积神经网络"><a href="#卷积神经网络" class="headerlink" title="卷积神经网络"></a>卷积神经网络</h3><p>卷积神经网络讲解：<br><a href="http://yann.lecun.com/exdb/lenet/index.html" target="_blank" rel="external">zouxy09博客</a></p>
+<p>经典案例：<br><a href="http://yann.lecun.com/exdb/lenet/index.html" target="_blank" rel="external">手写识别</a></p>
+<h3 id="总结与展望"><a href="#总结与展望" class="headerlink" title="总结与展望"></a>总结与展望</h3><h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>深度学习是将特征工程与分类预测任务结合，自动学习特征，由低层次特征向高层次特征不断抽象，形成多层次神经网络的模型方法。<br>其最主要特征在于：<strong>其深度的层次，丰富的参数赋予其强大的表达能力，能够拟合更复杂的函数与模型，特别是非线性函数，对大规模数据分析处理上较浅层算法有良好的效果。</strong></p>
+<h4 id="展望"><a href="#展望" class="headerlink" title="展望"></a>展望</h4><p>深度学习作为当前监督学习算法中，在大规模数据背景下最优秀的算法，在computer vision/speech recognition/natural language process等方面有着很好的应用。</p>
+<ol>
+<li>从应用方面：</li>
+</ol>
+<ul>
+<li>其在不同的应用场景下，学习框架的设计，是非常复杂的，需要更多的理论支撑和实际的测试。</li>
+<li>深度学习参数众多，实际使用过程中，参数的设计与训练是难点。</li>
+<li>怎样结合并行计算的优势，来构建深度学习。</li>
+</ul>
+<ol>
+<li><p>从学习方法方面：<br>深度学习在监督学习方面应用做的很好，但在计算机模拟人类学习的需求下，非监督学习在人类学习方法中占主要比例。这也是深度学习的发展方向。</p>
+</li>
+<li><p>从实际使用方面：<br>据说hinton都说不清深度学习是怎么工作的，估计世界上很少有人能说出为什么它里面的物理意义吧。当前最好的办法就是，把dl当做黑箱子来用，基于经验和结果来调整参数。</p>
+</li>
+</ol>
+
             </div>
         </div>
     </div>
