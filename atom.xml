@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-05-25T10:53:08.677Z</updated>
+  <updated>2016-05-25T10:52:39.533Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,54 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>deeplearning轶事</title>
+    <link href="http://yoursite.com/2016/05/25/deeplearning%E8%BD%B6%E4%BA%8B/"/>
+    <id>http://yoursite.com/2016/05/25/deeplearning轶事/</id>
+    <published>2016-05-25T09:34:54.000Z</published>
+    <updated>2016-05-25T10:52:39.533Z</updated>
+    
+    <content type="html">&lt;p&gt;最近在研究深度学习，在阅读文献过程中，也接触到不少名人轶事，个人认为非常有意思，对理解整个人工智能发展历程有不少帮助。&lt;/p&gt;
+&lt;h2 id=&quot;Geoffrey-Hinton-amp-AI-revolution&quot;&gt;&lt;a href=&quot;#Geoffrey-Hinton-amp-AI-revolution&quot; class=&quot;headerlink&quot; title=&quot;Geoffrey Hinton &amp;amp; AI revolution&quot;&gt;&lt;/a&gt;Geoffrey Hinton &amp;amp; AI revolution&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;从1950年图灵提出图灵测试开始，人们对人工智能有了很高的期待。然而，半个多世纪过去，人工智能除了能用一些神经网络、支持向量机等浅层学习算法拟合一些线性模型和少数简单非线性模型外，远远没有达到图灵测试的要求，甚至有人讲机器学习称为伪科学。直到Geoffrey Hinton在2006年提出深度学习，这一能够模拟人类处理“抽象概念”的算法模型…&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;图灵测试：&lt;br&gt;隔墙对话，让人分不出对方是机器还是人类。&lt;br&gt;人工智能发展半个多世纪，离图灵测试相距甚远，直到深度学习的出现。&lt;br&gt;其基于抽象概念的深层次网络，丰富的参数，能够拟合复杂的非线性函数与模型，对大规模数据具有良好的表达处理能力。&lt;br&gt;这里不得不提的人物： &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Geoffrey Hinton：神经网络鼻祖，深度学习发明者，曾任教Cambridge、CMU，目前任教University of Toronto&lt;/li&gt;
+&lt;li&gt;Yoshua Bengio：经历比较简单，McGill University 获得博士后，去 MIT 追随 Mike Jordan 做博士后。目前任教 University of Montreal。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;Google-兵分两路&quot;&gt;&lt;a href=&quot;#Google-兵分两路&quot; class=&quot;headerlink&quot; title=&quot;Google 兵分两路&quot;&gt;&lt;/a&gt;Google 兵分两路&lt;/h2&gt;&lt;p&gt;Deep Learning引爆的这一波人工智能热潮，不仅在学术界，更在工业界产生不小的影响。相关的技术，在工业界犹如一把开山斧，等待着是各大公司一路披荆斩棘，动用资本和商业的强力手段，跑马圈地了。&lt;br&gt;Google作为全球从学术界转入工业界的翘楚与典范，自然不会错过这次机会。&lt;br&gt;Google兵分两路，左路以 Jeff Dean 和 Andrew Ng 为首，重点突破 Deep Learning等等算法和应用，右路军由 Amit Singhal 领军，目标是构建 Knowledge Graph 基础设施。&lt;/p&gt;
+&lt;p&gt;不得不提的大牛：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Jeff Dean：  Google 诸位 Fellows 中，名列榜首，GFS 就是他的杰作。Andrew Ng 本科时，就读 CMU，后来去 MIT 追随 Mike Jordan。&lt;/li&gt;
+&lt;li&gt;Andrew Ng：Mike Jordan 在 MIT 人缘不好，后来愤然出走 UC Berkeley。Andrew Ng 毫不犹豫追随导师，也去了 Berkeley。拿到博士后，任教 Stanford，是 Stanford 新生代教授中的佼佼者，同时兼职 Google。&lt;/li&gt;
+&lt;li&gt;Amit Singhal：1996 年 Amit Singhal 从 Cornell University 拿到博士学位后，去 Bell Lab 工作，2000 年加盟 Google。据说他去 Google 面试时，对 Google 创始人 Sergey Brian 说，“Your engine is excellent, but let me rewirte it!”。Amit Singhal 目前任职 Google 高级副总裁，掌管 Google最核心的业务，搜索引擎。&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近在研究深度学习，在阅读文献过程中，也接触到不少名人轶事，个人认为非常有意思，对理解整个人工智能发展历程有不少帮助。&lt;/p&gt;
+&lt;h2 id=&quot;Geoffrey-Hinton-amp-AI-revolution&quot;&gt;&lt;a href=&quot;#Geoffrey-Hinton-amp-
+    
+    </summary>
+    
+      <category term="科研" scheme="http://yoursite.com/categories/%E7%A7%91%E7%A0%94/"/>
+    
+      <category term="基础知识" scheme="http://yoursite.com/categories/%E7%A7%91%E7%A0%94/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+    
+      <category term="deeplearning" scheme="http://yoursite.com/tags/deeplearning/"/>
+    
+      <category term="读书笔记" scheme="http://yoursite.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>deeplearningnotes</title>
     <link href="http://yoursite.com/2016/05/25/DeepLearningnotes/"/>
     <id>http://yoursite.com/2016/05/25/DeepLearningnotes/</id>
     <published>2016-05-25T09:34:54.000Z</published>
-    <updated>2016-05-25T10:53:08.677Z</updated>
+    <updated>2016-05-25T11:03:35.424Z</updated>
     
     <content type="html">&lt;h1 id=&quot;深度学习学习笔记&quot;&gt;&lt;a href=&quot;#深度学习学习笔记&quot; class=&quot;headerlink&quot; title=&quot;深度学习学习笔记&quot;&gt;&lt;/a&gt;深度学习学习笔记&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;最近研究一篇论文，使用RNN（recurrence neural networks）识别二进制代码中函数的方法，考虑到相关的CNN，LSTM，t-SNE，LDA等名词和相关算法一直碰到，避无可避，遂整体的学习了一下DeepLearning相关的知识。&lt;/p&gt;
@@ -89,49 +132,6 @@
     
       &lt;h1 id=&quot;深度学习学习笔记&quot;&gt;&lt;a href=&quot;#深度学习学习笔记&quot; class=&quot;headerlink&quot; title=&quot;深度学习学习笔记&quot;&gt;&lt;/a&gt;深度学习学习笔记&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;最近研究一篇论文，使用RNN（recurrence neural 
-    
-    </summary>
-    
-      <category term="科研" scheme="http://yoursite.com/categories/%E7%A7%91%E7%A0%94/"/>
-    
-      <category term="基础知识" scheme="http://yoursite.com/categories/%E7%A7%91%E7%A0%94/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    
-    
-      <category term="deeplearning" scheme="http://yoursite.com/tags/deeplearning/"/>
-    
-      <category term="读书笔记" scheme="http://yoursite.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>deeplearning轶事</title>
-    <link href="http://yoursite.com/2016/05/25/deeplearning%E8%BD%B6%E4%BA%8B/"/>
-    <id>http://yoursite.com/2016/05/25/deeplearning轶事/</id>
-    <published>2016-05-25T09:34:54.000Z</published>
-    <updated>2016-05-25T10:52:39.533Z</updated>
-    
-    <content type="html">&lt;p&gt;最近在研究深度学习，在阅读文献过程中，也接触到不少名人轶事，个人认为非常有意思，对理解整个人工智能发展历程有不少帮助。&lt;/p&gt;
-&lt;h2 id=&quot;Geoffrey-Hinton-amp-AI-revolution&quot;&gt;&lt;a href=&quot;#Geoffrey-Hinton-amp-AI-revolution&quot; class=&quot;headerlink&quot; title=&quot;Geoffrey Hinton &amp;amp; AI revolution&quot;&gt;&lt;/a&gt;Geoffrey Hinton &amp;amp; AI revolution&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;从1950年图灵提出图灵测试开始，人们对人工智能有了很高的期待。然而，半个多世纪过去，人工智能除了能用一些神经网络、支持向量机等浅层学习算法拟合一些线性模型和少数简单非线性模型外，远远没有达到图灵测试的要求，甚至有人讲机器学习称为伪科学。直到Geoffrey Hinton在2006年提出深度学习，这一能够模拟人类处理“抽象概念”的算法模型…&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;图灵测试：&lt;br&gt;隔墙对话，让人分不出对方是机器还是人类。&lt;br&gt;人工智能发展半个多世纪，离图灵测试相距甚远，直到深度学习的出现。&lt;br&gt;其基于抽象概念的深层次网络，丰富的参数，能够拟合复杂的非线性函数与模型，对大规模数据具有良好的表达处理能力。&lt;br&gt;这里不得不提的人物： &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Geoffrey Hinton：神经网络鼻祖，深度学习发明者，曾任教Cambridge、CMU，目前任教University of Toronto&lt;/li&gt;
-&lt;li&gt;Yoshua Bengio：经历比较简单，McGill University 获得博士后，去 MIT 追随 Mike Jordan 做博士后。目前任教 University of Montreal。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;Google-兵分两路&quot;&gt;&lt;a href=&quot;#Google-兵分两路&quot; class=&quot;headerlink&quot; title=&quot;Google 兵分两路&quot;&gt;&lt;/a&gt;Google 兵分两路&lt;/h2&gt;&lt;p&gt;Deep Learning引爆的这一波人工智能热潮，不仅在学术界，更在工业界产生不小的影响。相关的技术，在工业界犹如一把开山斧，等待着是各大公司一路披荆斩棘，动用资本和商业的强力手段，跑马圈地了。&lt;br&gt;Google作为全球从学术界转入工业界的翘楚与典范，自然不会错过这次机会。&lt;br&gt;Google兵分两路，左路以 Jeff Dean 和 Andrew Ng 为首，重点突破 Deep Learning等等算法和应用，右路军由 Amit Singhal 领军，目标是构建 Knowledge Graph 基础设施。&lt;/p&gt;
-&lt;p&gt;不得不提的大牛：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Jeff Dean：  Google 诸位 Fellows 中，名列榜首，GFS 就是他的杰作。Andrew Ng 本科时，就读 CMU，后来去 MIT 追随 Mike Jordan。&lt;/li&gt;
-&lt;li&gt;Andrew Ng：Mike Jordan 在 MIT 人缘不好，后来愤然出走 UC Berkeley。Andrew Ng 毫不犹豫追随导师，也去了 Berkeley。拿到博士后，任教 Stanford，是 Stanford 新生代教授中的佼佼者，同时兼职 Google。&lt;/li&gt;
-&lt;li&gt;Amit Singhal：1996 年 Amit Singhal 从 Cornell University 拿到博士学位后，去 Bell Lab 工作，2000 年加盟 Google。据说他去 Google 面试时，对 Google 创始人 Sergey Brian 说，“Your engine is excellent, but let me rewirte it!”。Amit Singhal 目前任职 Google 高级副总裁，掌管 Google最核心的业务，搜索引擎。&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;最近在研究深度学习，在阅读文献过程中，也接触到不少名人轶事，个人认为非常有意思，对理解整个人工智能发展历程有不少帮助。&lt;/p&gt;
-&lt;h2 id=&quot;Geoffrey-Hinton-amp-AI-revolution&quot;&gt;&lt;a href=&quot;#Geoffrey-Hinton-amp-
     
     </summary>
     
