@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-05-25T11:03:35.424Z</updated>
+  <updated>2016-05-28T16:46:07.061Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,105 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>deeplearningnotes</title>
+    <title>数据结构与算法</title>
+    <link href="http://yoursite.com/2016/05/29/data-algorithm/"/>
+    <id>http://yoursite.com/2016/05/29/data-algorithm/</id>
+    <published>2016-05-28T16:43:39.000Z</published>
+    <updated>2016-05-28T16:46:07.061Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;近日压力倍增，在图书馆自习，期望能够看更多的论文。休息期间找到一本算法的教材，从机器学习和人工智能的角度重温了一遍数据结构与算法。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;本科阶段曾学习过&lt;strong&gt;数据结构与算法&lt;/strong&gt;这门课程，使用的是C语言实现的小绿书。依稀记得当时老师只是讲解了计算机程序中常见的数据结构，&lt;strong&gt;例如线性表，队列，栈等的存储方式以及增删查改的操作实现方法&lt;/strong&gt;，并且给出了程序时间复杂度和空间复杂度的概念和分析方法。&lt;br&gt;很明确的一个概念：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;program = data + algorithm&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h1 id=&quot;数据结构算法与机器学习&quot;&gt;&lt;a href=&quot;#数据结构算法与机器学习&quot; class=&quot;headerlink&quot; title=&quot;数据结构算法与机器学习&quot;&gt;&lt;/a&gt;数据结构算法与机器学习&lt;/h1&gt;&lt;p&gt;最近研究了很多机器学习相关的概念和算法，发现其的核心理念就是使用计算机模拟人类的学习方法，来处理数据。才发现其实数据结构与算法是机器学习的基础。&lt;br&gt;二者都是使用算法来处理数据，得到一些结果。&lt;br&gt;区别在于，机器学习的数据非此处的结构化数据，往往需要进行预处理和特征抽取；算法也是复杂得多的模型和训练算法，目的是为了进行预测。&lt;br&gt;总体来说，计算机的数据结构与算法，是机器学习的基础。&lt;/p&gt;
+&lt;h1 id=&quot;数据结构与算法的架构&quot;&gt;&lt;a href=&quot;#数据结构与算法的架构&quot; class=&quot;headerlink&quot; title=&quot;数据结构与算法的架构&quot;&gt;&lt;/a&gt;数据结构与算法的架构&lt;/h1&gt;&lt;p&gt;本书将数据结构与算法分为八大思想，数据结构，数据查找和排序四大部分。其中，八大思想讲述了日常算法中常用的八种思想；数据结构体现了数据在计算机中的组织形式，包括物理形式和逻辑形式，给出了数据在计算机中存储和运算的基本方法；最后，查找和排序，是数据处理最常见的需求，也是最基本的算法。&lt;br&gt;组织形式如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;算法思想&lt;ul&gt;
+&lt;li&gt;枚举&lt;/li&gt;
+&lt;li&gt;递归&lt;/li&gt;
+&lt;li&gt;递推&lt;/li&gt;
+&lt;li&gt;迭代&lt;/li&gt;
+&lt;li&gt;分治&lt;/li&gt;
+&lt;li&gt;贪心&lt;/li&gt;
+&lt;li&gt;试探&lt;/li&gt;
+&lt;li&gt;模拟&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;数据结构&lt;ul&gt;
+&lt;li&gt;基本结构&lt;ul&gt;
+&lt;li&gt;线性表&lt;/li&gt;
+&lt;li&gt;队列&lt;/li&gt;
+&lt;li&gt;栈&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;逻辑结构&lt;ul&gt;
+&lt;li&gt;树&lt;ul&gt;
+&lt;li&gt;二叉树&lt;/li&gt;
+&lt;li&gt;霍夫曼树&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;图&lt;ul&gt;
+&lt;li&gt;有向图&lt;/li&gt;
+&lt;li&gt;无向图&lt;/li&gt;
+&lt;li&gt;连通图&lt;/li&gt;
+&lt;li&gt;生成树&lt;/li&gt;
+&lt;li&gt;深度遍历&lt;/li&gt;
+&lt;li&gt;广度遍历&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;查找&lt;ul&gt;
+&lt;li&gt;基于线性表的查找&lt;/li&gt;
+&lt;li&gt;基于树的查找&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;排序(&lt;a href=&quot;http://www.cricode.com/3212.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;图文详解八大排序算法&lt;/a&gt;)&lt;ul&gt;
+&lt;li&gt;交换排序&lt;ul&gt;
+&lt;li&gt;冒泡排序&lt;/li&gt;
+&lt;li&gt;快速排序&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;插入排序&lt;ul&gt;
+&lt;li&gt;希尔排序&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;选择排序&lt;ul&gt;
+&lt;li&gt;堆排序&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;归并排序&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;相关思维导图如下图：&lt;br&gt;&lt;img src=&quot;https://git.oschina.net/breezedong/figure_bed/raw/master/data_algorithm.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;近日压力倍增，在图书馆自习，期望能够看更多的论文。休息期间找到一本算法的教材，从机器学习和人工智能的角度重温了一遍
+    
+    </summary>
+    
+      <category term="技术积累" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF%E7%A7%AF%E7%B4%AF/"/>
+    
+      <category term="数据结构与算法" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF%E7%A7%AF%E7%B4%AF/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="读书笔记" scheme="http://yoursite.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>UFLDL深度学习笔记</title>
     <link href="http://yoursite.com/2016/05/25/DeepLearningnotes/"/>
     <id>http://yoursite.com/2016/05/25/DeepLearningnotes/</id>
     <published>2016-05-25T09:34:54.000Z</published>
-    <updated>2016-05-25T11:03:35.424Z</updated>
+    <updated>2016-05-28T16:47:59.121Z</updated>
     
     <content type="html">&lt;h1 id=&quot;深度学习学习笔记&quot;&gt;&lt;a href=&quot;#深度学习学习笔记&quot; class=&quot;headerlink&quot; title=&quot;深度学习学习笔记&quot;&gt;&lt;/a&gt;深度学习学习笔记&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;最近研究一篇论文，使用RNN（recurrence neural networks）识别二进制代码中函数的方法，考虑到相关的CNN，LSTM，t-SNE，LDA等名词和相关算法一直碰到，避无可避，遂整体的学习了一下DeepLearning相关的知识。&lt;/p&gt;
@@ -92,23 +186,23 @@
     
     </summary>
     
-      <category term="科研" scheme="http://yoursite.com/categories/%E7%A7%91%E7%A0%94/"/>
+      <category term="论文" scheme="http://yoursite.com/categories/%E8%AE%BA%E6%96%87/"/>
     
-      <category term="基础知识" scheme="http://yoursite.com/categories/%E7%A7%91%E7%A0%94/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+      <category term="机器学习" scheme="http://yoursite.com/categories/%E8%AE%BA%E6%96%87/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
-    
-      <category term="deeplearning" scheme="http://yoursite.com/tags/deeplearning/"/>
     
       <category term="读书笔记" scheme="http://yoursite.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="deeplearning" scheme="http://yoursite.com/tags/deeplearning/"/>
     
   </entry>
   
   <entry>
-    <title>deeplearning轶事</title>
+    <title>深度学习轶事</title>
     <link href="http://yoursite.com/2016/05/25/deeplearning%E8%BD%B6%E4%BA%8B/"/>
     <id>http://yoursite.com/2016/05/25/deeplearning轶事/</id>
     <published>2016-05-25T09:34:54.000Z</published>
-    <updated>2016-05-25T10:52:39.533Z</updated>
+    <updated>2016-05-28T16:48:12.021Z</updated>
     
     <content type="html">&lt;p&gt;最近在研究深度学习，在阅读文献过程中，也接触到不少名人轶事，个人认为非常有意思，对理解整个人工智能发展历程有不少帮助。&lt;/p&gt;
 &lt;h2 id=&quot;Geoffrey-Hinton-amp-AI-revolution&quot;&gt;&lt;a href=&quot;#Geoffrey-Hinton-amp-AI-revolution&quot; class=&quot;headerlink&quot; title=&quot;Geoffrey Hinton &amp;amp; AI revolution&quot;&gt;&lt;/a&gt;Geoffrey Hinton &amp;amp; AI revolution&lt;/h2&gt;&lt;blockquote&gt;
@@ -135,14 +229,14 @@
     
     </summary>
     
-      <category term="科研" scheme="http://yoursite.com/categories/%E7%A7%91%E7%A0%94/"/>
+      <category term="论文" scheme="http://yoursite.com/categories/%E8%AE%BA%E6%96%87/"/>
     
-      <category term="基础知识" scheme="http://yoursite.com/categories/%E7%A7%91%E7%A0%94/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+      <category term="机器学习" scheme="http://yoursite.com/categories/%E8%AE%BA%E6%96%87/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
-    
-      <category term="deeplearning" scheme="http://yoursite.com/tags/deeplearning/"/>
     
       <category term="读书笔记" scheme="http://yoursite.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="deeplearning" scheme="http://yoursite.com/tags/deeplearning/"/>
     
   </entry>
   
