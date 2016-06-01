@@ -7,13 +7,17 @@
 
     
 
-    <title>读书笔记 | </title>
+    <title>Predicting Vulnerable Software Components via Text Mining | </title>
     <meta name="author" content="Breeze Dong">
+    
+    <meta name="description" content="背景文章于2014年10月份发表在IEEE TRANSACTIONS ON SOFTWARE ENGINEERING，一篇通过文本挖掘技术进行软件漏洞检测的论文。文章本身引用只有14，创新点也不是很新，但由于其期刊等级较高，而且文章数据处理分析较多，还是值得以后写作借鉴。
+
+出处：IEEE TRAN">
     
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    
+    <meta property="og:title" content="Predicting Vulnerable Software Components via Text Mining"/>
     <meta property="og:site_name" content="Breeze Dong&#39;s Blog"/>
 
     
@@ -239,43 +243,141 @@
 
     <main>
         <div class="container main-container">
-    
-
-<nav class="page-nav hide-on-small-only">
+    <nav class="page-nav hide-on-small-only">
     <div class="nav-wrapper green">
-        <span class="breadcrumb">当前位置（标签）</span>
+        <span class="breadcrumb">当前位置（分类目录）</span>
         
+            
+    
+    
+    <a class="breadcrumb" href="/categories/论文/">论文</a><a class="breadcrumb" href="/categories/论文/软件安全/">软件安全</a><a class="breadcrumb" href="/categories/论文/软件安全/漏洞检测/">漏洞检测</a>
+
 
         
-            <a class="breadcrumb" href="/tags/读书笔记/">读书笔记</a>
+
         
     </div>
 </nav>
 
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>Predicting Vulnerable Software Components via Text Mining</h1>
+    
 
 
-    <div class="collection mt-0">
+            </div>
+            <time class="red-link-context" datetime="2016-06-01T15:47:04.000Z"><a href="/2016/06/01/Mining/">2016-06-01</a></time>
+
+            
+    <div class="tags-row">
         
-            <a href="/2016/05/29/data-algorithm/" class="collection-item grey-text text-darken-1">
-                <time datetime="2016-05-28T16:43:39.000Z">2016-05-29</time>
-                <span>&nbsp;&nbsp;&nbsp;</span>
-                数据结构与算法
-            </a>
+            <a href="/tags/漏洞检测/" class="chip red lighten-1">漏洞检测</a>
         
-            <a href="/2016/05/25/deeplearning轶事/" class="collection-item grey-text text-darken-1">
-                <time datetime="2016-05-25T09:34:54.000Z">2016-05-25</time>
-                <span>&nbsp;&nbsp;&nbsp;</span>
-                深度学习轶事
-            </a>
-        
-            <a href="/2016/05/25/DeepLearningnotes/" class="collection-item grey-text text-darken-1">
-                <time datetime="2016-05-25T09:34:54.000Z">2016-05-25</time>
-                <span>&nbsp;&nbsp;&nbsp;</span>
-                UFLDL深度学习笔记
-            </a>
+            <a href="/tags/软件安全/" class="chip red lighten-1">软件安全</a>
         
     </div>
 
+
+            <div class="toc red-link-context hide-on-med-and-down">
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#背景"><span class="section table-of-contents-text">背景</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#概述"><span class="section table-of-contents-text">概述</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#论文主要观点"><span class="section table-of-contents-text">论文主要观点</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#成果"><span class="section table-of-contents-text">成果</span></a></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#方法模型"><span class="section table-of-contents-text">方法模型</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#相关工作图"><span class="section table-of-contents-text">相关工作图</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#主要步骤"><span class="section table-of-contents-text">主要步骤</span></a></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#创新点"><span class="section table-of-contents-text">创新点</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#总结"><span class="section table-of-contents-text">总结</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#优点"><span class="section table-of-contents-text">优点</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#不足"><span class="section table-of-contents-text">不足</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#我的想法"><span class="section table-of-contents-text">我的想法</span></a></li></ol></li></ol>
+</div>
+
+
+            <div class="entry red-link-context">
+                <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>文章于2014年10月份发表在IEEE TRANSACTIONS ON SOFTWARE ENGINEERING，一篇通过文本挖掘技术进行软件漏洞检测的论文。文章本身引用只有<a href="https://scholar.google.com/scholar?hl=zh-CN&amp;q=Predicting+Vulnerable+Software+Components+via+Text+Mining&amp;btnG=&amp;lr=" target="_blank" rel="external">14</a>，创新点也不是很新，但由于其期刊等级较高，而且文章数据处理分析较多，还是值得以后写作借鉴。</p>
+<ul>
+<li>出处：IEEE TRANSACTIONS ON SOFTWARE ENGINEERING, VOL. 40, NO. 10, OCTOBER 2014</li>
+<li>作者：Riccardo Scandariato, James Walden, Aram Hovsepyan, and Wouter Joosen</li>
+</ul>
+<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><h2 id="论文主要观点"><a href="#论文主要观点" class="headerlink" title="论文主要观点"></a>论文主要观点</h2><p>将Android app应用软件源代码视作文本，源代码中语句与词类比于文本中词，作为数据特征，使用朴素贝叶斯和随机森林的算法，构建软件源代码漏洞预测模型。</p>
+<h2 id="成果"><a href="#成果" class="headerlink" title="成果"></a>成果</h2><ul>
+<li>首次将文本挖掘相关方法应用于软件漏洞预测，直接使用源代码而非软件语义、开发者相关特征作为特征进行预测。</li>
+<li>预测模型相对于当前的软件漏洞预测模型，具有更好的准确性和召回率。</li>
+</ul>
+<h1 id="方法模型"><a href="#方法模型" class="headerlink" title="方法模型"></a>方法模型</h1><h2 id="相关工作图"><a href="#相关工作图" class="headerlink" title="相关工作图"></a>相关工作图</h2><p>作者使用五个维度的信息来评价对比软件漏洞预测模型相关工作，如下图所示：<br><img src="https://git.oschina.net/breezedong/figure_bed/raw/master/vulnerability_prediction_models_related_work.jpg" alt="image"></p>
+<h2 id="主要步骤"><a href="#主要步骤" class="headerlink" title="主要步骤"></a>主要步骤</h2><ul>
+<li>样本选择selection of applications：<ul>
+<li>source: the F-Droid repository (f-droid.org) </li>
+<li>selection criteria:programming language, application size, and the number of<br>versions released</li>
+</ul>
+</li>
+<li>漏洞数据构建construction of dataset：<ul>
+<li>tool:HP Fortify SCA  scan the source code to present vulnerablity warnings of the applications</li>
+<li>why:too few vulnerabilities(NVD<br>(nvd.nist.gov)) related to Android applications </li>
+</ul>
+</li>
+<li>输入构建input：Each Java file is tokenized into a vector of terms</li>
+<li>机器学习方法选择machine learning techniques:five, wellknown learning techniques are applied to the approache: Decision Trees, k-Nearest<br>Neighbor, Na€ ıve Bayes, Random Forest and support vector machine (SVM). Best results are obtained with <strong>NB and Random Forest</strong>.</li>
+<li>实验设计experiments design:<ul>
+<li>验证方法validation:10-fold cross-validation</li>
+<li>experiment 1:built models with both Na€ ıve Bayes and Random Forest machine learning techniques based on the first version (v0) of each application.prove the method can be used to build high quality prediction models for Android applications.</li>
+<li>experiment 2:built a prediction model based on the initial version (using all source files available in v0) and predicted all subsequent versions of that application (v1 andfollowing) prediction technique can forecast with excellent performance the vulnerable files of the future versions of an Android application</li>
+<li>experiment 3：built 20 models using version v0 of each application. We then tested each model by predicting vulnerable files in the v0 versions of the other 19 applications.a single application can predict which software components are vulnerable in other applications</li>
+</ul>
+</li>
+</ul>
+<h1 id="创新点"><a href="#创新点" class="headerlink" title="创新点"></a>创新点</h1><ul>
+<li>文本挖掘方法应用于软件缺陷检测</li>
+<li>实验设计上，进行三个方向上的对比实验</li>
+</ul>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><ul>
+<li>文章的实验部分数据对比写的不错，很简单的创意和想法，做出了三组实验</li>
+</ul>
+<h2 id="不足"><a href="#不足" class="headerlink" title="不足"></a>不足</h2><ul>
+<li>创新点较为简单</li>
+<li>数据对比牵强，数据集不同</li>
+<li>期刊论文过于滞后，本文2014年10月发表，但是研究时间节点在2012年前后，以后尽量多看会议论文，期刊论文仅作为参考文献</li>
+</ul>
+<h2 id="我的想法"><a href="#我的想法" class="headerlink" title="我的想法"></a>我的想法</h2><ul>
+<li>结合vccfinder论文</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+    <section id="comment">
+        <div class="card">
+            <div class="card-content">
+                <!-- Duoshuo Comment BEGIN -->
+                <div class="ds-thread" data-thread-key="2016/06/01/Mining/" data-title="Predicting Vulnerable Software Components via Text Mining" data-url="http://yoursite.com/2016/06/01/Mining/"></div>
+
+                <script type="text/javascript">
+                    console.log(document.querySelector('.ds-thread'));
+                    var duoshuoQuery = {
+                        short_name: 'breezedong'
+                    };
+                    (function() {
+                        var ds = document.createElement('script');
+                        ds.type = 'text/javascript';
+                        ds.async = true;
+                        ds.src = (document.location.protocol == 'https:'
+                            ? 'https:'
+                            : 'http:') + '//static.duoshuo.com/embed.js';
+                        ds.charset = 'UTF-8';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+                    })();
+                </script>
+                <!-- Duoshuo Comment END -->
+            </div>
+        </div>
+    </section>
+
+
+
+
+  
+ 
 
 </div>
 

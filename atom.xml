@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-05-28T16:46:07.061Z</updated>
+  <updated>2016-06-01T15:51:02.279Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,81 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Predicting Vulnerable Software Components via Text Mining</title>
+    <link href="http://yoursite.com/2016/06/01/Mining/"/>
+    <id>http://yoursite.com/2016/06/01/Mining/</id>
+    <published>2016-06-01T15:47:04.000Z</published>
+    <updated>2016-06-01T15:51:02.279Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h1&gt;&lt;p&gt;文章于2014年10月份发表在IEEE TRANSACTIONS ON SOFTWARE ENGINEERING，一篇通过文本挖掘技术进行软件漏洞检测的论文。文章本身引用只有&lt;a href=&quot;https://scholar.google.com/scholar?hl=zh-CN&amp;amp;q=Predicting+Vulnerable+Software+Components+via+Text+Mining&amp;amp;btnG=&amp;amp;lr=&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;14&lt;/a&gt;，创新点也不是很新，但由于其期刊等级较高，而且文章数据处理分析较多，还是值得以后写作借鉴。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;出处：IEEE TRANSACTIONS ON SOFTWARE ENGINEERING, VOL. 40, NO. 10, OCTOBER 2014&lt;/li&gt;
+&lt;li&gt;作者：Riccardo Scandariato, James Walden, Aram Hovsepyan, and Wouter Joosen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;h2 id=&quot;论文主要观点&quot;&gt;&lt;a href=&quot;#论文主要观点&quot; class=&quot;headerlink&quot; title=&quot;论文主要观点&quot;&gt;&lt;/a&gt;论文主要观点&lt;/h2&gt;&lt;p&gt;将Android app应用软件源代码视作文本，源代码中语句与词类比于文本中词，作为数据特征，使用朴素贝叶斯和随机森林的算法，构建软件源代码漏洞预测模型。&lt;/p&gt;
+&lt;h2 id=&quot;成果&quot;&gt;&lt;a href=&quot;#成果&quot; class=&quot;headerlink&quot; title=&quot;成果&quot;&gt;&lt;/a&gt;成果&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;首次将文本挖掘相关方法应用于软件漏洞预测，直接使用源代码而非软件语义、开发者相关特征作为特征进行预测。&lt;/li&gt;
+&lt;li&gt;预测模型相对于当前的软件漏洞预测模型，具有更好的准确性和召回率。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;方法模型&quot;&gt;&lt;a href=&quot;#方法模型&quot; class=&quot;headerlink&quot; title=&quot;方法模型&quot;&gt;&lt;/a&gt;方法模型&lt;/h1&gt;&lt;h2 id=&quot;相关工作图&quot;&gt;&lt;a href=&quot;#相关工作图&quot; class=&quot;headerlink&quot; title=&quot;相关工作图&quot;&gt;&lt;/a&gt;相关工作图&lt;/h2&gt;&lt;p&gt;作者使用五个维度的信息来评价对比软件漏洞预测模型相关工作，如下图所示：&lt;br&gt;&lt;img src=&quot;https://git.oschina.net/breezedong/figure_bed/raw/master/vulnerability_prediction_models_related_work.jpg&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;主要步骤&quot;&gt;&lt;a href=&quot;#主要步骤&quot; class=&quot;headerlink&quot; title=&quot;主要步骤&quot;&gt;&lt;/a&gt;主要步骤&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;样本选择selection of applications：&lt;ul&gt;
+&lt;li&gt;source: the F-Droid repository (f-droid.org) &lt;/li&gt;
+&lt;li&gt;selection criteria:programming language, application size, and the number of&lt;br&gt;versions released&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;漏洞数据构建construction of dataset：&lt;ul&gt;
+&lt;li&gt;tool:HP Fortify SCA  scan the source code to present vulnerablity warnings of the applications&lt;/li&gt;
+&lt;li&gt;why:too few vulnerabilities(NVD&lt;br&gt;(nvd.nist.gov)) related to Android applications &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;输入构建input：Each Java file is tokenized into a vector of terms&lt;/li&gt;
+&lt;li&gt;机器学习方法选择machine learning techniques:five, wellknown learning techniques are applied to the approache: Decision Trees, k-Nearest&lt;br&gt;Neighbor, Na€ ıve Bayes, Random Forest and support vector machine (SVM). Best results are obtained with &lt;strong&gt;NB and Random Forest&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;实验设计experiments design:&lt;ul&gt;
+&lt;li&gt;验证方法validation:10-fold cross-validation&lt;/li&gt;
+&lt;li&gt;experiment 1:built models with both Na€ ıve Bayes and Random Forest machine learning techniques based on the first version (v0) of each application.prove the method can be used to build high quality prediction models for Android applications.&lt;/li&gt;
+&lt;li&gt;experiment 2:built a prediction model based on the initial version (using all source files available in v0) and predicted all subsequent versions of that application (v1 andfollowing) prediction technique can forecast with excellent performance the vulnerable files of the future versions of an Android application&lt;/li&gt;
+&lt;li&gt;experiment 3：built 20 models using version v0 of each application. We then tested each model by predicting vulnerable files in the v0 versions of the other 19 applications.a single application can predict which software components are vulnerable in other applications&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;创新点&quot;&gt;&lt;a href=&quot;#创新点&quot; class=&quot;headerlink&quot; title=&quot;创新点&quot;&gt;&lt;/a&gt;创新点&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;文本挖掘方法应用于软件缺陷检测&lt;/li&gt;
+&lt;li&gt;实验设计上，进行三个方向上的对比实验&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;总结&quot;&gt;&lt;a href=&quot;#总结&quot; class=&quot;headerlink&quot; title=&quot;总结&quot;&gt;&lt;/a&gt;总结&lt;/h1&gt;&lt;h2 id=&quot;优点&quot;&gt;&lt;a href=&quot;#优点&quot; class=&quot;headerlink&quot; title=&quot;优点&quot;&gt;&lt;/a&gt;优点&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;文章的实验部分数据对比写的不错，很简单的创意和想法，做出了三组实验&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;不足&quot;&gt;&lt;a href=&quot;#不足&quot; class=&quot;headerlink&quot; title=&quot;不足&quot;&gt;&lt;/a&gt;不足&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;创新点较为简单&lt;/li&gt;
+&lt;li&gt;数据对比牵强，数据集不同&lt;/li&gt;
+&lt;li&gt;期刊论文过于滞后，本文2014年10月发表，但是研究时间节点在2012年前后，以后尽量多看会议论文，期刊论文仅作为参考文献&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;我的想法&quot;&gt;&lt;a href=&quot;#我的想法&quot; class=&quot;headerlink&quot; title=&quot;我的想法&quot;&gt;&lt;/a&gt;我的想法&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;结合vccfinder论文&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h1&gt;&lt;p&gt;文章于2014年10月份发表在IEEE TRANSACTIONS ON SOFTWARE ENGINEERING，一篇通过文本挖掘技术进行软
+    
+    </summary>
+    
+      <category term="论文" scheme="http://yoursite.com/categories/%E8%AE%BA%E6%96%87/"/>
+    
+      <category term="软件安全" scheme="http://yoursite.com/categories/%E8%AE%BA%E6%96%87/%E8%BD%AF%E4%BB%B6%E5%AE%89%E5%85%A8/"/>
+    
+      <category term="漏洞检测" scheme="http://yoursite.com/categories/%E8%AE%BA%E6%96%87/%E8%BD%AF%E4%BB%B6%E5%AE%89%E5%85%A8/%E6%BC%8F%E6%B4%9E%E6%A3%80%E6%B5%8B/"/>
+    
+    
+      <category term="漏洞检测" scheme="http://yoursite.com/tags/%E6%BC%8F%E6%B4%9E%E6%A3%80%E6%B5%8B/"/>
+    
+      <category term="软件安全" scheme="http://yoursite.com/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E5%85%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>数据结构与算法</title>
@@ -110,6 +185,49 @@
   </entry>
   
   <entry>
+    <title>深度学习轶事</title>
+    <link href="http://yoursite.com/2016/05/25/deeplearning%E8%BD%B6%E4%BA%8B/"/>
+    <id>http://yoursite.com/2016/05/25/deeplearning轶事/</id>
+    <published>2016-05-25T09:34:54.000Z</published>
+    <updated>2016-05-28T16:48:12.021Z</updated>
+    
+    <content type="html">&lt;p&gt;最近在研究深度学习，在阅读文献过程中，也接触到不少名人轶事，个人认为非常有意思，对理解整个人工智能发展历程有不少帮助。&lt;/p&gt;
+&lt;h2 id=&quot;Geoffrey-Hinton-amp-AI-revolution&quot;&gt;&lt;a href=&quot;#Geoffrey-Hinton-amp-AI-revolution&quot; class=&quot;headerlink&quot; title=&quot;Geoffrey Hinton &amp;amp; AI revolution&quot;&gt;&lt;/a&gt;Geoffrey Hinton &amp;amp; AI revolution&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;从1950年图灵提出图灵测试开始，人们对人工智能有了很高的期待。然而，半个多世纪过去，人工智能除了能用一些神经网络、支持向量机等浅层学习算法拟合一些线性模型和少数简单非线性模型外，远远没有达到图灵测试的要求，甚至有人讲机器学习称为伪科学。直到Geoffrey Hinton在2006年提出深度学习，这一能够模拟人类处理“抽象概念”的算法模型…&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;图灵测试：&lt;br&gt;隔墙对话，让人分不出对方是机器还是人类。&lt;br&gt;人工智能发展半个多世纪，离图灵测试相距甚远，直到深度学习的出现。&lt;br&gt;其基于抽象概念的深层次网络，丰富的参数，能够拟合复杂的非线性函数与模型，对大规模数据具有良好的表达处理能力。&lt;br&gt;这里不得不提的人物： &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Geoffrey Hinton：神经网络鼻祖，深度学习发明者，曾任教Cambridge、CMU，目前任教University of Toronto&lt;/li&gt;
+&lt;li&gt;Yoshua Bengio：经历比较简单，McGill University 获得博士后，去 MIT 追随 Mike Jordan 做博士后。目前任教 University of Montreal。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;Google-兵分两路&quot;&gt;&lt;a href=&quot;#Google-兵分两路&quot; class=&quot;headerlink&quot; title=&quot;Google 兵分两路&quot;&gt;&lt;/a&gt;Google 兵分两路&lt;/h2&gt;&lt;p&gt;Deep Learning引爆的这一波人工智能热潮，不仅在学术界，更在工业界产生不小的影响。相关的技术，在工业界犹如一把开山斧，等待着是各大公司一路披荆斩棘，动用资本和商业的强力手段，跑马圈地了。&lt;br&gt;Google作为全球从学术界转入工业界的翘楚与典范，自然不会错过这次机会。&lt;br&gt;Google兵分两路，左路以 Jeff Dean 和 Andrew Ng 为首，重点突破 Deep Learning等等算法和应用，右路军由 Amit Singhal 领军，目标是构建 Knowledge Graph 基础设施。&lt;/p&gt;
+&lt;p&gt;不得不提的大牛：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Jeff Dean：  Google 诸位 Fellows 中，名列榜首，GFS 就是他的杰作。Andrew Ng 本科时，就读 CMU，后来去 MIT 追随 Mike Jordan。&lt;/li&gt;
+&lt;li&gt;Andrew Ng：Mike Jordan 在 MIT 人缘不好，后来愤然出走 UC Berkeley。Andrew Ng 毫不犹豫追随导师，也去了 Berkeley。拿到博士后，任教 Stanford，是 Stanford 新生代教授中的佼佼者，同时兼职 Google。&lt;/li&gt;
+&lt;li&gt;Amit Singhal：1996 年 Amit Singhal 从 Cornell University 拿到博士学位后，去 Bell Lab 工作，2000 年加盟 Google。据说他去 Google 面试时，对 Google 创始人 Sergey Brian 说，“Your engine is excellent, but let me rewirte it!”。Amit Singhal 目前任职 Google 高级副总裁，掌管 Google最核心的业务，搜索引擎。&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近在研究深度学习，在阅读文献过程中，也接触到不少名人轶事，个人认为非常有意思，对理解整个人工智能发展历程有不少帮助。&lt;/p&gt;
+&lt;h2 id=&quot;Geoffrey-Hinton-amp-AI-revolution&quot;&gt;&lt;a href=&quot;#Geoffrey-Hinton-amp-
+    
+    </summary>
+    
+      <category term="论文" scheme="http://yoursite.com/categories/%E8%AE%BA%E6%96%87/"/>
+    
+      <category term="机器学习" scheme="http://yoursite.com/categories/%E8%AE%BA%E6%96%87/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="读书笔记" scheme="http://yoursite.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="deeplearning" scheme="http://yoursite.com/tags/deeplearning/"/>
+    
+  </entry>
+  
+  <entry>
     <title>UFLDL深度学习笔记</title>
     <link href="http://yoursite.com/2016/05/25/DeepLearningnotes/"/>
     <id>http://yoursite.com/2016/05/25/DeepLearningnotes/</id>
@@ -183,49 +301,6 @@
     
       &lt;h1 id=&quot;深度学习学习笔记&quot;&gt;&lt;a href=&quot;#深度学习学习笔记&quot; class=&quot;headerlink&quot; title=&quot;深度学习学习笔记&quot;&gt;&lt;/a&gt;深度学习学习笔记&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;最近研究一篇论文，使用RNN（recurrence neural 
-    
-    </summary>
-    
-      <category term="论文" scheme="http://yoursite.com/categories/%E8%AE%BA%E6%96%87/"/>
-    
-      <category term="机器学习" scheme="http://yoursite.com/categories/%E8%AE%BA%E6%96%87/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="读书笔记" scheme="http://yoursite.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="deeplearning" scheme="http://yoursite.com/tags/deeplearning/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>深度学习轶事</title>
-    <link href="http://yoursite.com/2016/05/25/deeplearning%E8%BD%B6%E4%BA%8B/"/>
-    <id>http://yoursite.com/2016/05/25/deeplearning轶事/</id>
-    <published>2016-05-25T09:34:54.000Z</published>
-    <updated>2016-05-28T16:48:12.021Z</updated>
-    
-    <content type="html">&lt;p&gt;最近在研究深度学习，在阅读文献过程中，也接触到不少名人轶事，个人认为非常有意思，对理解整个人工智能发展历程有不少帮助。&lt;/p&gt;
-&lt;h2 id=&quot;Geoffrey-Hinton-amp-AI-revolution&quot;&gt;&lt;a href=&quot;#Geoffrey-Hinton-amp-AI-revolution&quot; class=&quot;headerlink&quot; title=&quot;Geoffrey Hinton &amp;amp; AI revolution&quot;&gt;&lt;/a&gt;Geoffrey Hinton &amp;amp; AI revolution&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;从1950年图灵提出图灵测试开始，人们对人工智能有了很高的期待。然而，半个多世纪过去，人工智能除了能用一些神经网络、支持向量机等浅层学习算法拟合一些线性模型和少数简单非线性模型外，远远没有达到图灵测试的要求，甚至有人讲机器学习称为伪科学。直到Geoffrey Hinton在2006年提出深度学习，这一能够模拟人类处理“抽象概念”的算法模型…&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;图灵测试：&lt;br&gt;隔墙对话，让人分不出对方是机器还是人类。&lt;br&gt;人工智能发展半个多世纪，离图灵测试相距甚远，直到深度学习的出现。&lt;br&gt;其基于抽象概念的深层次网络，丰富的参数，能够拟合复杂的非线性函数与模型，对大规模数据具有良好的表达处理能力。&lt;br&gt;这里不得不提的人物： &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Geoffrey Hinton：神经网络鼻祖，深度学习发明者，曾任教Cambridge、CMU，目前任教University of Toronto&lt;/li&gt;
-&lt;li&gt;Yoshua Bengio：经历比较简单，McGill University 获得博士后，去 MIT 追随 Mike Jordan 做博士后。目前任教 University of Montreal。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;Google-兵分两路&quot;&gt;&lt;a href=&quot;#Google-兵分两路&quot; class=&quot;headerlink&quot; title=&quot;Google 兵分两路&quot;&gt;&lt;/a&gt;Google 兵分两路&lt;/h2&gt;&lt;p&gt;Deep Learning引爆的这一波人工智能热潮，不仅在学术界，更在工业界产生不小的影响。相关的技术，在工业界犹如一把开山斧，等待着是各大公司一路披荆斩棘，动用资本和商业的强力手段，跑马圈地了。&lt;br&gt;Google作为全球从学术界转入工业界的翘楚与典范，自然不会错过这次机会。&lt;br&gt;Google兵分两路，左路以 Jeff Dean 和 Andrew Ng 为首，重点突破 Deep Learning等等算法和应用，右路军由 Amit Singhal 领军，目标是构建 Knowledge Graph 基础设施。&lt;/p&gt;
-&lt;p&gt;不得不提的大牛：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Jeff Dean：  Google 诸位 Fellows 中，名列榜首，GFS 就是他的杰作。Andrew Ng 本科时，就读 CMU，后来去 MIT 追随 Mike Jordan。&lt;/li&gt;
-&lt;li&gt;Andrew Ng：Mike Jordan 在 MIT 人缘不好，后来愤然出走 UC Berkeley。Andrew Ng 毫不犹豫追随导师，也去了 Berkeley。拿到博士后，任教 Stanford，是 Stanford 新生代教授中的佼佼者，同时兼职 Google。&lt;/li&gt;
-&lt;li&gt;Amit Singhal：1996 年 Amit Singhal 从 Cornell University 拿到博士学位后，去 Bell Lab 工作，2000 年加盟 Google。据说他去 Google 面试时，对 Google 创始人 Sergey Brian 说，“Your engine is excellent, but let me rewirte it!”。Amit Singhal 目前任职 Google 高级副总裁，掌管 Google最核心的业务，搜索引擎。&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;最近在研究深度学习，在阅读文献过程中，也接触到不少名人轶事，个人认为非常有意思，对理解整个人工智能发展历程有不少帮助。&lt;/p&gt;
-&lt;h2 id=&quot;Geoffrey-Hinton-amp-AI-revolution&quot;&gt;&lt;a href=&quot;#Geoffrey-Hinton-amp-
     
     </summary>
     

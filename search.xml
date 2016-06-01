@@ -4,6 +4,59 @@
   
     
     <entry>
+      <title><![CDATA[Predicting Vulnerable Software Components via Text Mining]]></title>
+      <url>http://yoursite.com/2016/06/01/Mining/</url>
+      <content type="html"><![CDATA[<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>文章于2014年10月份发表在IEEE TRANSACTIONS ON SOFTWARE ENGINEERING，一篇通过文本挖掘技术进行软件漏洞检测的论文。文章本身引用只有<a href="https://scholar.google.com/scholar?hl=zh-CN&amp;q=Predicting+Vulnerable+Software+Components+via+Text+Mining&amp;btnG=&amp;lr=" target="_blank" rel="external">14</a>，创新点也不是很新，但由于其期刊等级较高，而且文章数据处理分析较多，还是值得以后写作借鉴。</p>
+<ul>
+<li>出处：IEEE TRANSACTIONS ON SOFTWARE ENGINEERING, VOL. 40, NO. 10, OCTOBER 2014</li>
+<li>作者：Riccardo Scandariato, James Walden, Aram Hovsepyan, and Wouter Joosen</li>
+</ul>
+<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><h2 id="论文主要观点"><a href="#论文主要观点" class="headerlink" title="论文主要观点"></a>论文主要观点</h2><p>将Android app应用软件源代码视作文本，源代码中语句与词类比于文本中词，作为数据特征，使用朴素贝叶斯和随机森林的算法，构建软件源代码漏洞预测模型。</p>
+<h2 id="成果"><a href="#成果" class="headerlink" title="成果"></a>成果</h2><ul>
+<li>首次将文本挖掘相关方法应用于软件漏洞预测，直接使用源代码而非软件语义、开发者相关特征作为特征进行预测。</li>
+<li>预测模型相对于当前的软件漏洞预测模型，具有更好的准确性和召回率。</li>
+</ul>
+<h1 id="方法模型"><a href="#方法模型" class="headerlink" title="方法模型"></a>方法模型</h1><h2 id="相关工作图"><a href="#相关工作图" class="headerlink" title="相关工作图"></a>相关工作图</h2><p>作者使用五个维度的信息来评价对比软件漏洞预测模型相关工作，如下图所示：<br><img src="https://git.oschina.net/breezedong/figure_bed/raw/master/vulnerability_prediction_models_related_work.jpg" alt="image"></p>
+<h2 id="主要步骤"><a href="#主要步骤" class="headerlink" title="主要步骤"></a>主要步骤</h2><ul>
+<li>样本选择selection of applications：<ul>
+<li>source: the F-Droid repository (f-droid.org) </li>
+<li>selection criteria:programming language, application size, and the number of<br>versions released</li>
+</ul>
+</li>
+<li>漏洞数据构建construction of dataset：<ul>
+<li>tool:HP Fortify SCA  scan the source code to present vulnerablity warnings of the applications</li>
+<li>why:too few vulnerabilities(NVD<br>(nvd.nist.gov)) related to Android applications </li>
+</ul>
+</li>
+<li>输入构建input：Each Java file is tokenized into a vector of terms</li>
+<li>机器学习方法选择machine learning techniques:five, wellknown learning techniques are applied to the approache: Decision Trees, k-Nearest<br>Neighbor, Na€ ıve Bayes, Random Forest and support vector machine (SVM). Best results are obtained with <strong>NB and Random Forest</strong>.</li>
+<li>实验设计experiments design:<ul>
+<li>验证方法validation:10-fold cross-validation</li>
+<li>experiment 1:built models with both Na€ ıve Bayes and Random Forest machine learning techniques based on the first version (v0) of each application.prove the method can be used to build high quality prediction models for Android applications.</li>
+<li>experiment 2:built a prediction model based on the initial version (using all source files available in v0) and predicted all subsequent versions of that application (v1 andfollowing) prediction technique can forecast with excellent performance the vulnerable files of the future versions of an Android application</li>
+<li>experiment 3：built 20 models using version v0 of each application. We then tested each model by predicting vulnerable files in the v0 versions of the other 19 applications.a single application can predict which software components are vulnerable in other applications</li>
+</ul>
+</li>
+</ul>
+<h1 id="创新点"><a href="#创新点" class="headerlink" title="创新点"></a>创新点</h1><ul>
+<li>文本挖掘方法应用于软件缺陷检测</li>
+<li>实验设计上，进行三个方向上的对比实验</li>
+</ul>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><ul>
+<li>文章的实验部分数据对比写的不错，很简单的创意和想法，做出了三组实验</li>
+</ul>
+<h2 id="不足"><a href="#不足" class="headerlink" title="不足"></a>不足</h2><ul>
+<li>创新点较为简单</li>
+<li>数据对比牵强，数据集不同</li>
+<li>期刊论文过于滞后，本文2014年10月发表，但是研究时间节点在2012年前后，以后尽量多看会议论文，期刊论文仅作为参考文献</li>
+</ul>
+<h2 id="我的想法"><a href="#我的想法" class="headerlink" title="我的想法"></a>我的想法</h2><ul>
+<li>结合vccfinder论文</li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[数据结构与算法]]></title>
       <url>http://yoursite.com/2016/05/29/data-algorithm/</url>
       <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
@@ -79,6 +132,28 @@
     </entry>
     
     <entry>
+      <title><![CDATA[深度学习轶事]]></title>
+      <url>http://yoursite.com/2016/05/25/deeplearning%E8%BD%B6%E4%BA%8B/</url>
+      <content type="html"><![CDATA[<p>最近在研究深度学习，在阅读文献过程中，也接触到不少名人轶事，个人认为非常有意思，对理解整个人工智能发展历程有不少帮助。</p>
+<h2 id="Geoffrey-Hinton-amp-AI-revolution"><a href="#Geoffrey-Hinton-amp-AI-revolution" class="headerlink" title="Geoffrey Hinton &amp; AI revolution"></a>Geoffrey Hinton &amp; AI revolution</h2><blockquote>
+<p>从1950年图灵提出图灵测试开始，人们对人工智能有了很高的期待。然而，半个多世纪过去，人工智能除了能用一些神经网络、支持向量机等浅层学习算法拟合一些线性模型和少数简单非线性模型外，远远没有达到图灵测试的要求，甚至有人讲机器学习称为伪科学。直到Geoffrey Hinton在2006年提出深度学习，这一能够模拟人类处理“抽象概念”的算法模型…</p>
+</blockquote>
+<p>图灵测试：<br>隔墙对话，让人分不出对方是机器还是人类。<br>人工智能发展半个多世纪，离图灵测试相距甚远，直到深度学习的出现。<br>其基于抽象概念的深层次网络，丰富的参数，能够拟合复杂的非线性函数与模型，对大规模数据具有良好的表达处理能力。<br>这里不得不提的人物： </p>
+<ul>
+<li>Geoffrey Hinton：神经网络鼻祖，深度学习发明者，曾任教Cambridge、CMU，目前任教University of Toronto</li>
+<li>Yoshua Bengio：经历比较简单，McGill University 获得博士后，去 MIT 追随 Mike Jordan 做博士后。目前任教 University of Montreal。</li>
+</ul>
+<h2 id="Google-兵分两路"><a href="#Google-兵分两路" class="headerlink" title="Google 兵分两路"></a>Google 兵分两路</h2><p>Deep Learning引爆的这一波人工智能热潮，不仅在学术界，更在工业界产生不小的影响。相关的技术，在工业界犹如一把开山斧，等待着是各大公司一路披荆斩棘，动用资本和商业的强力手段，跑马圈地了。<br>Google作为全球从学术界转入工业界的翘楚与典范，自然不会错过这次机会。<br>Google兵分两路，左路以 Jeff Dean 和 Andrew Ng 为首，重点突破 Deep Learning等等算法和应用，右路军由 Amit Singhal 领军，目标是构建 Knowledge Graph 基础设施。</p>
+<p>不得不提的大牛：</p>
+<ul>
+<li>Jeff Dean：  Google 诸位 Fellows 中，名列榜首，GFS 就是他的杰作。Andrew Ng 本科时，就读 CMU，后来去 MIT 追随 Mike Jordan。</li>
+<li>Andrew Ng：Mike Jordan 在 MIT 人缘不好，后来愤然出走 UC Berkeley。Andrew Ng 毫不犹豫追随导师，也去了 Berkeley。拿到博士后，任教 Stanford，是 Stanford 新生代教授中的佼佼者，同时兼职 Google。</li>
+<li>Amit Singhal：1996 年 Amit Singhal 从 Cornell University 拿到博士学位后，去 Bell Lab 工作，2000 年加盟 Google。据说他去 Google 面试时，对 Google 创始人 Sergey Brian 说，“Your engine is excellent, but let me rewirte it!”。Amit Singhal 目前任职 Google 高级副总裁，掌管 Google最核心的业务，搜索引擎。</li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[UFLDL深度学习笔记]]></title>
       <url>http://yoursite.com/2016/05/25/DeepLearningnotes/</url>
       <content type="html"><![CDATA[<h1 id="深度学习学习笔记"><a href="#深度学习学习笔记" class="headerlink" title="深度学习学习笔记"></a>深度学习学习笔记</h1><blockquote>
@@ -142,28 +217,6 @@
 <li><p>从实际使用方面：<br>据说hinton都说不清深度学习是怎么工作的，估计世界上很少有人能说出为什么它里面的物理意义吧。当前最好的办法就是，把dl当做黑箱子来用，基于经验和结果来调整参数。</p>
 </li>
 </ol>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[深度学习轶事]]></title>
-      <url>http://yoursite.com/2016/05/25/deeplearning%E8%BD%B6%E4%BA%8B/</url>
-      <content type="html"><![CDATA[<p>最近在研究深度学习，在阅读文献过程中，也接触到不少名人轶事，个人认为非常有意思，对理解整个人工智能发展历程有不少帮助。</p>
-<h2 id="Geoffrey-Hinton-amp-AI-revolution"><a href="#Geoffrey-Hinton-amp-AI-revolution" class="headerlink" title="Geoffrey Hinton &amp; AI revolution"></a>Geoffrey Hinton &amp; AI revolution</h2><blockquote>
-<p>从1950年图灵提出图灵测试开始，人们对人工智能有了很高的期待。然而，半个多世纪过去，人工智能除了能用一些神经网络、支持向量机等浅层学习算法拟合一些线性模型和少数简单非线性模型外，远远没有达到图灵测试的要求，甚至有人讲机器学习称为伪科学。直到Geoffrey Hinton在2006年提出深度学习，这一能够模拟人类处理“抽象概念”的算法模型…</p>
-</blockquote>
-<p>图灵测试：<br>隔墙对话，让人分不出对方是机器还是人类。<br>人工智能发展半个多世纪，离图灵测试相距甚远，直到深度学习的出现。<br>其基于抽象概念的深层次网络，丰富的参数，能够拟合复杂的非线性函数与模型，对大规模数据具有良好的表达处理能力。<br>这里不得不提的人物： </p>
-<ul>
-<li>Geoffrey Hinton：神经网络鼻祖，深度学习发明者，曾任教Cambridge、CMU，目前任教University of Toronto</li>
-<li>Yoshua Bengio：经历比较简单，McGill University 获得博士后，去 MIT 追随 Mike Jordan 做博士后。目前任教 University of Montreal。</li>
-</ul>
-<h2 id="Google-兵分两路"><a href="#Google-兵分两路" class="headerlink" title="Google 兵分两路"></a>Google 兵分两路</h2><p>Deep Learning引爆的这一波人工智能热潮，不仅在学术界，更在工业界产生不小的影响。相关的技术，在工业界犹如一把开山斧，等待着是各大公司一路披荆斩棘，动用资本和商业的强力手段，跑马圈地了。<br>Google作为全球从学术界转入工业界的翘楚与典范，自然不会错过这次机会。<br>Google兵分两路，左路以 Jeff Dean 和 Andrew Ng 为首，重点突破 Deep Learning等等算法和应用，右路军由 Amit Singhal 领军，目标是构建 Knowledge Graph 基础设施。</p>
-<p>不得不提的大牛：</p>
-<ul>
-<li>Jeff Dean：  Google 诸位 Fellows 中，名列榜首，GFS 就是他的杰作。Andrew Ng 本科时，就读 CMU，后来去 MIT 追随 Mike Jordan。</li>
-<li>Andrew Ng：Mike Jordan 在 MIT 人缘不好，后来愤然出走 UC Berkeley。Andrew Ng 毫不犹豫追随导师，也去了 Berkeley。拿到博士后，任教 Stanford，是 Stanford 新生代教授中的佼佼者，同时兼职 Google。</li>
-<li>Amit Singhal：1996 年 Amit Singhal 从 Cornell University 拿到博士学位后，去 Bell Lab 工作，2000 年加盟 Google。据说他去 Google 面试时，对 Google 创始人 Sergey Brian 说，“Your engine is excellent, but let me rewirte it!”。Amit Singhal 目前任职 Google 高级副总裁，掌管 Google最核心的业务，搜索引擎。</li>
-</ul>
 ]]></content>
     </entry>
     
