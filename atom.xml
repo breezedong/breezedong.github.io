@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-06-01T15:51:02.279Z</updated>
+  <updated>2016-06-03T07:00:44.726Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>计算机网络回顾笔记</title>
+    <link href="http://yoursite.com/2016/06/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%9B%9E%E9%A1%BE%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2016/06/03/计算机网络回顾笔记/</id>
+    <published>2016-06-03T06:58:49.000Z</published>
+    <updated>2016-06-03T07:00:44.726Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;网络架构&quot;&gt;&lt;a href=&quot;#网络架构&quot; class=&quot;headerlink&quot; title=&quot;网络架构&quot;&gt;&lt;/a&gt;网络架构&lt;/h1&gt;&lt;p&gt;计算机科学，离不开算法的设计，其作为人类智慧的结晶，以计算机语言的形式展现出来，是整个计算机学科和人工智能的基础。最近重新温习了一遍本科阶段的一本计算机网络书籍，带着欣赏算法的眼光，来重新梳理了一遍此课程的脉络。&lt;br&gt;计算机网络是一门讲述计算机之间如何通信的课程。&lt;br&gt;其主要的脉络：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;物理构成：网络外围的主机和网络核心的路由器和交换机&lt;/li&gt;
+&lt;li&gt;逻辑结构：五层结构，物理层，数据链路层，网络层，运输层，应用层&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;整个计算机通信网络是依靠分组交换的方式，在计算机之间传输报文。物理层负责提供电流通道，信息传输；数据链路层负责将电流通道从逻辑上进行整理，统一管理通道；网络层负责管理报文运输的路由，准确性；运输层负责管理报文运输过程中的质量和效率；应用层负责管理报文中实际应用数据的组织形式。&lt;/p&gt;
+&lt;p&gt;如果将计算机网络比做交通运输网络，则物理层就是提供车辆行驶的路；数据链路层就是规划的路，如立交桥，车道等；网络层就是车辆运输的起始和终点管理；运输层就是交通工具，轿车，货车等；应用层就是运输的物质，石头，砖块，家禽等等。&lt;br&gt;当然，有一些比喻不恰当的地方。&lt;br&gt;如下图所示：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://git.oschina.net/breezedong/figure_bed/raw/master/computer_network.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;说说路由器与交换机&quot;&gt;&lt;a href=&quot;#说说路由器与交换机&quot; class=&quot;headerlink&quot; title=&quot;说说路由器与交换机&quot;&gt;&lt;/a&gt;说说路由器与交换机&lt;/h1&gt;&lt;p&gt;虽然平时在实验室一直接触到各种各样的路由器和交换机，但是还真没有弄明白它们的区别。&lt;br&gt;所谓交换机，工作在二层（数据链路层）的集线器或网桥，其将主机连接在一起，完成数据包的交换功能。&lt;br&gt;路由器，工作在三层（网络层）的路由设备，其完成主机之间寻址功能。&lt;br&gt;平时家用的小型路由器涵盖了四个交换口和路由器功能。而常见的三层交换机，也是包括了交换功能和路由功能。&lt;/p&gt;
+&lt;h1 id=&quot;感悟&quot;&gt;&lt;a href=&quot;#感悟&quot; class=&quot;headerlink&quot; title=&quot;感悟&quot;&gt;&lt;/a&gt;感悟&lt;/h1&gt;&lt;p&gt;本科时候学习的方法真的很机械，学习TCP差错控制，就是去记忆它是怎么实现差错控制，殊不知，其真正的目的在于实现数据传输的准确性。&lt;strong&gt;本科阶段大多课程，继承了高中时期填鸭式的学习方法，大多只是机械的记忆一些方法技巧，而忽略了这些方法技巧的目的和意义。&lt;/strong&gt;这样就好比将大量文件复制拷贝到了你的大脑存储中，但是你却没有形成对这些文件的索引，长久下去，他们会成为一种累赘。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;网络架构&quot;&gt;&lt;a href=&quot;#网络架构&quot; class=&quot;headerlink&quot; title=&quot;网络架构&quot;&gt;&lt;/a&gt;网络架构&lt;/h1&gt;&lt;p&gt;计算机科学，离不开算法的设计，其作为人类智慧的结晶，以计算机语言的形式展现出来，是整个计算机学科和人工智能的基础。最近重新温
+    
+    </summary>
+    
+      <category term="技术积累" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF%E7%A7%AF%E7%B4%AF/"/>
+    
+      <category term="计算机网络" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF%E7%A7%AF%E7%B4%AF/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+      <category term="读书笔记" scheme="http://yoursite.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="计算机网络" scheme="http://yoursite.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>Predicting Vulnerable Software Components via Text Mining</title>
@@ -185,49 +221,6 @@
   </entry>
   
   <entry>
-    <title>深度学习轶事</title>
-    <link href="http://yoursite.com/2016/05/25/deeplearning%E8%BD%B6%E4%BA%8B/"/>
-    <id>http://yoursite.com/2016/05/25/deeplearning轶事/</id>
-    <published>2016-05-25T09:34:54.000Z</published>
-    <updated>2016-05-28T16:48:12.021Z</updated>
-    
-    <content type="html">&lt;p&gt;最近在研究深度学习，在阅读文献过程中，也接触到不少名人轶事，个人认为非常有意思，对理解整个人工智能发展历程有不少帮助。&lt;/p&gt;
-&lt;h2 id=&quot;Geoffrey-Hinton-amp-AI-revolution&quot;&gt;&lt;a href=&quot;#Geoffrey-Hinton-amp-AI-revolution&quot; class=&quot;headerlink&quot; title=&quot;Geoffrey Hinton &amp;amp; AI revolution&quot;&gt;&lt;/a&gt;Geoffrey Hinton &amp;amp; AI revolution&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;从1950年图灵提出图灵测试开始，人们对人工智能有了很高的期待。然而，半个多世纪过去，人工智能除了能用一些神经网络、支持向量机等浅层学习算法拟合一些线性模型和少数简单非线性模型外，远远没有达到图灵测试的要求，甚至有人讲机器学习称为伪科学。直到Geoffrey Hinton在2006年提出深度学习，这一能够模拟人类处理“抽象概念”的算法模型…&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;图灵测试：&lt;br&gt;隔墙对话，让人分不出对方是机器还是人类。&lt;br&gt;人工智能发展半个多世纪，离图灵测试相距甚远，直到深度学习的出现。&lt;br&gt;其基于抽象概念的深层次网络，丰富的参数，能够拟合复杂的非线性函数与模型，对大规模数据具有良好的表达处理能力。&lt;br&gt;这里不得不提的人物： &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Geoffrey Hinton：神经网络鼻祖，深度学习发明者，曾任教Cambridge、CMU，目前任教University of Toronto&lt;/li&gt;
-&lt;li&gt;Yoshua Bengio：经历比较简单，McGill University 获得博士后，去 MIT 追随 Mike Jordan 做博士后。目前任教 University of Montreal。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;Google-兵分两路&quot;&gt;&lt;a href=&quot;#Google-兵分两路&quot; class=&quot;headerlink&quot; title=&quot;Google 兵分两路&quot;&gt;&lt;/a&gt;Google 兵分两路&lt;/h2&gt;&lt;p&gt;Deep Learning引爆的这一波人工智能热潮，不仅在学术界，更在工业界产生不小的影响。相关的技术，在工业界犹如一把开山斧，等待着是各大公司一路披荆斩棘，动用资本和商业的强力手段，跑马圈地了。&lt;br&gt;Google作为全球从学术界转入工业界的翘楚与典范，自然不会错过这次机会。&lt;br&gt;Google兵分两路，左路以 Jeff Dean 和 Andrew Ng 为首，重点突破 Deep Learning等等算法和应用，右路军由 Amit Singhal 领军，目标是构建 Knowledge Graph 基础设施。&lt;/p&gt;
-&lt;p&gt;不得不提的大牛：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Jeff Dean：  Google 诸位 Fellows 中，名列榜首，GFS 就是他的杰作。Andrew Ng 本科时，就读 CMU，后来去 MIT 追随 Mike Jordan。&lt;/li&gt;
-&lt;li&gt;Andrew Ng：Mike Jordan 在 MIT 人缘不好，后来愤然出走 UC Berkeley。Andrew Ng 毫不犹豫追随导师，也去了 Berkeley。拿到博士后，任教 Stanford，是 Stanford 新生代教授中的佼佼者，同时兼职 Google。&lt;/li&gt;
-&lt;li&gt;Amit Singhal：1996 年 Amit Singhal 从 Cornell University 拿到博士学位后，去 Bell Lab 工作，2000 年加盟 Google。据说他去 Google 面试时，对 Google 创始人 Sergey Brian 说，“Your engine is excellent, but let me rewirte it!”。Amit Singhal 目前任职 Google 高级副总裁，掌管 Google最核心的业务，搜索引擎。&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;最近在研究深度学习，在阅读文献过程中，也接触到不少名人轶事，个人认为非常有意思，对理解整个人工智能发展历程有不少帮助。&lt;/p&gt;
-&lt;h2 id=&quot;Geoffrey-Hinton-amp-AI-revolution&quot;&gt;&lt;a href=&quot;#Geoffrey-Hinton-amp-
-    
-    </summary>
-    
-      <category term="论文" scheme="http://yoursite.com/categories/%E8%AE%BA%E6%96%87/"/>
-    
-      <category term="机器学习" scheme="http://yoursite.com/categories/%E8%AE%BA%E6%96%87/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="读书笔记" scheme="http://yoursite.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="deeplearning" scheme="http://yoursite.com/tags/deeplearning/"/>
-    
-  </entry>
-  
-  <entry>
     <title>UFLDL深度学习笔记</title>
     <link href="http://yoursite.com/2016/05/25/DeepLearningnotes/"/>
     <id>http://yoursite.com/2016/05/25/DeepLearningnotes/</id>
@@ -301,6 +294,49 @@
     
       &lt;h1 id=&quot;深度学习学习笔记&quot;&gt;&lt;a href=&quot;#深度学习学习笔记&quot; class=&quot;headerlink&quot; title=&quot;深度学习学习笔记&quot;&gt;&lt;/a&gt;深度学习学习笔记&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;最近研究一篇论文，使用RNN（recurrence neural 
+    
+    </summary>
+    
+      <category term="论文" scheme="http://yoursite.com/categories/%E8%AE%BA%E6%96%87/"/>
+    
+      <category term="机器学习" scheme="http://yoursite.com/categories/%E8%AE%BA%E6%96%87/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="读书笔记" scheme="http://yoursite.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="deeplearning" scheme="http://yoursite.com/tags/deeplearning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>深度学习轶事</title>
+    <link href="http://yoursite.com/2016/05/25/deeplearning%E8%BD%B6%E4%BA%8B/"/>
+    <id>http://yoursite.com/2016/05/25/deeplearning轶事/</id>
+    <published>2016-05-25T09:34:54.000Z</published>
+    <updated>2016-05-28T16:48:12.021Z</updated>
+    
+    <content type="html">&lt;p&gt;最近在研究深度学习，在阅读文献过程中，也接触到不少名人轶事，个人认为非常有意思，对理解整个人工智能发展历程有不少帮助。&lt;/p&gt;
+&lt;h2 id=&quot;Geoffrey-Hinton-amp-AI-revolution&quot;&gt;&lt;a href=&quot;#Geoffrey-Hinton-amp-AI-revolution&quot; class=&quot;headerlink&quot; title=&quot;Geoffrey Hinton &amp;amp; AI revolution&quot;&gt;&lt;/a&gt;Geoffrey Hinton &amp;amp; AI revolution&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;从1950年图灵提出图灵测试开始，人们对人工智能有了很高的期待。然而，半个多世纪过去，人工智能除了能用一些神经网络、支持向量机等浅层学习算法拟合一些线性模型和少数简单非线性模型外，远远没有达到图灵测试的要求，甚至有人讲机器学习称为伪科学。直到Geoffrey Hinton在2006年提出深度学习，这一能够模拟人类处理“抽象概念”的算法模型…&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;图灵测试：&lt;br&gt;隔墙对话，让人分不出对方是机器还是人类。&lt;br&gt;人工智能发展半个多世纪，离图灵测试相距甚远，直到深度学习的出现。&lt;br&gt;其基于抽象概念的深层次网络，丰富的参数，能够拟合复杂的非线性函数与模型，对大规模数据具有良好的表达处理能力。&lt;br&gt;这里不得不提的人物： &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Geoffrey Hinton：神经网络鼻祖，深度学习发明者，曾任教Cambridge、CMU，目前任教University of Toronto&lt;/li&gt;
+&lt;li&gt;Yoshua Bengio：经历比较简单，McGill University 获得博士后，去 MIT 追随 Mike Jordan 做博士后。目前任教 University of Montreal。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;Google-兵分两路&quot;&gt;&lt;a href=&quot;#Google-兵分两路&quot; class=&quot;headerlink&quot; title=&quot;Google 兵分两路&quot;&gt;&lt;/a&gt;Google 兵分两路&lt;/h2&gt;&lt;p&gt;Deep Learning引爆的这一波人工智能热潮，不仅在学术界，更在工业界产生不小的影响。相关的技术，在工业界犹如一把开山斧，等待着是各大公司一路披荆斩棘，动用资本和商业的强力手段，跑马圈地了。&lt;br&gt;Google作为全球从学术界转入工业界的翘楚与典范，自然不会错过这次机会。&lt;br&gt;Google兵分两路，左路以 Jeff Dean 和 Andrew Ng 为首，重点突破 Deep Learning等等算法和应用，右路军由 Amit Singhal 领军，目标是构建 Knowledge Graph 基础设施。&lt;/p&gt;
+&lt;p&gt;不得不提的大牛：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Jeff Dean：  Google 诸位 Fellows 中，名列榜首，GFS 就是他的杰作。Andrew Ng 本科时，就读 CMU，后来去 MIT 追随 Mike Jordan。&lt;/li&gt;
+&lt;li&gt;Andrew Ng：Mike Jordan 在 MIT 人缘不好，后来愤然出走 UC Berkeley。Andrew Ng 毫不犹豫追随导师，也去了 Berkeley。拿到博士后，任教 Stanford，是 Stanford 新生代教授中的佼佼者，同时兼职 Google。&lt;/li&gt;
+&lt;li&gt;Amit Singhal：1996 年 Amit Singhal 从 Cornell University 拿到博士学位后，去 Bell Lab 工作，2000 年加盟 Google。据说他去 Google 面试时，对 Google 创始人 Sergey Brian 说，“Your engine is excellent, but let me rewirte it!”。Amit Singhal 目前任职 Google 高级副总裁，掌管 Google最核心的业务，搜索引擎。&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近在研究深度学习，在阅读文献过程中，也接触到不少名人轶事，个人认为非常有意思，对理解整个人工智能发展历程有不少帮助。&lt;/p&gt;
+&lt;h2 id=&quot;Geoffrey-Hinton-amp-AI-revolution&quot;&gt;&lt;a href=&quot;#Geoffrey-Hinton-amp-
     
     </summary>
     

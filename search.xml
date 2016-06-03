@@ -4,6 +4,22 @@
   
     
     <entry>
+      <title><![CDATA[计算机网络回顾笔记]]></title>
+      <url>http://yoursite.com/2016/06/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%9B%9E%E9%A1%BE%E7%AC%94%E8%AE%B0/</url>
+      <content type="html"><![CDATA[<h1 id="网络架构"><a href="#网络架构" class="headerlink" title="网络架构"></a>网络架构</h1><p>计算机科学，离不开算法的设计，其作为人类智慧的结晶，以计算机语言的形式展现出来，是整个计算机学科和人工智能的基础。最近重新温习了一遍本科阶段的一本计算机网络书籍，带着欣赏算法的眼光，来重新梳理了一遍此课程的脉络。<br>计算机网络是一门讲述计算机之间如何通信的课程。<br>其主要的脉络：</p>
+<ul>
+<li>物理构成：网络外围的主机和网络核心的路由器和交换机</li>
+<li>逻辑结构：五层结构，物理层，数据链路层，网络层，运输层，应用层</li>
+</ul>
+<p>整个计算机通信网络是依靠分组交换的方式，在计算机之间传输报文。物理层负责提供电流通道，信息传输；数据链路层负责将电流通道从逻辑上进行整理，统一管理通道；网络层负责管理报文运输的路由，准确性；运输层负责管理报文运输过程中的质量和效率；应用层负责管理报文中实际应用数据的组织形式。</p>
+<p>如果将计算机网络比做交通运输网络，则物理层就是提供车辆行驶的路；数据链路层就是规划的路，如立交桥，车道等；网络层就是车辆运输的起始和终点管理；运输层就是交通工具，轿车，货车等；应用层就是运输的物质，石头，砖块，家禽等等。<br>当然，有一些比喻不恰当的地方。<br>如下图所示：</p>
+<p><img src="https://git.oschina.net/breezedong/figure_bed/raw/master/computer_network.png" alt="image"></p>
+<h1 id="说说路由器与交换机"><a href="#说说路由器与交换机" class="headerlink" title="说说路由器与交换机"></a>说说路由器与交换机</h1><p>虽然平时在实验室一直接触到各种各样的路由器和交换机，但是还真没有弄明白它们的区别。<br>所谓交换机，工作在二层（数据链路层）的集线器或网桥，其将主机连接在一起，完成数据包的交换功能。<br>路由器，工作在三层（网络层）的路由设备，其完成主机之间寻址功能。<br>平时家用的小型路由器涵盖了四个交换口和路由器功能。而常见的三层交换机，也是包括了交换功能和路由功能。</p>
+<h1 id="感悟"><a href="#感悟" class="headerlink" title="感悟"></a>感悟</h1><p>本科时候学习的方法真的很机械，学习TCP差错控制，就是去记忆它是怎么实现差错控制，殊不知，其真正的目的在于实现数据传输的准确性。<strong>本科阶段大多课程，继承了高中时期填鸭式的学习方法，大多只是机械的记忆一些方法技巧，而忽略了这些方法技巧的目的和意义。</strong>这样就好比将大量文件复制拷贝到了你的大脑存储中，但是你却没有形成对这些文件的索引，长久下去，他们会成为一种累赘。</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Predicting Vulnerable Software Components via Text Mining]]></title>
       <url>http://yoursite.com/2016/06/01/Mining/</url>
       <content type="html"><![CDATA[<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>文章于2014年10月份发表在IEEE TRANSACTIONS ON SOFTWARE ENGINEERING，一篇通过文本挖掘技术进行软件漏洞检测的论文。文章本身引用只有<a href="https://scholar.google.com/scholar?hl=zh-CN&amp;q=Predicting+Vulnerable+Software+Components+via+Text+Mining&amp;btnG=&amp;lr=" target="_blank" rel="external">14</a>，创新点也不是很新，但由于其期刊等级较高，而且文章数据处理分析较多，还是值得以后写作借鉴。</p>
@@ -132,28 +148,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[深度学习轶事]]></title>
-      <url>http://yoursite.com/2016/05/25/deeplearning%E8%BD%B6%E4%BA%8B/</url>
-      <content type="html"><![CDATA[<p>最近在研究深度学习，在阅读文献过程中，也接触到不少名人轶事，个人认为非常有意思，对理解整个人工智能发展历程有不少帮助。</p>
-<h2 id="Geoffrey-Hinton-amp-AI-revolution"><a href="#Geoffrey-Hinton-amp-AI-revolution" class="headerlink" title="Geoffrey Hinton &amp; AI revolution"></a>Geoffrey Hinton &amp; AI revolution</h2><blockquote>
-<p>从1950年图灵提出图灵测试开始，人们对人工智能有了很高的期待。然而，半个多世纪过去，人工智能除了能用一些神经网络、支持向量机等浅层学习算法拟合一些线性模型和少数简单非线性模型外，远远没有达到图灵测试的要求，甚至有人讲机器学习称为伪科学。直到Geoffrey Hinton在2006年提出深度学习，这一能够模拟人类处理“抽象概念”的算法模型…</p>
-</blockquote>
-<p>图灵测试：<br>隔墙对话，让人分不出对方是机器还是人类。<br>人工智能发展半个多世纪，离图灵测试相距甚远，直到深度学习的出现。<br>其基于抽象概念的深层次网络，丰富的参数，能够拟合复杂的非线性函数与模型，对大规模数据具有良好的表达处理能力。<br>这里不得不提的人物： </p>
-<ul>
-<li>Geoffrey Hinton：神经网络鼻祖，深度学习发明者，曾任教Cambridge、CMU，目前任教University of Toronto</li>
-<li>Yoshua Bengio：经历比较简单，McGill University 获得博士后，去 MIT 追随 Mike Jordan 做博士后。目前任教 University of Montreal。</li>
-</ul>
-<h2 id="Google-兵分两路"><a href="#Google-兵分两路" class="headerlink" title="Google 兵分两路"></a>Google 兵分两路</h2><p>Deep Learning引爆的这一波人工智能热潮，不仅在学术界，更在工业界产生不小的影响。相关的技术，在工业界犹如一把开山斧，等待着是各大公司一路披荆斩棘，动用资本和商业的强力手段，跑马圈地了。<br>Google作为全球从学术界转入工业界的翘楚与典范，自然不会错过这次机会。<br>Google兵分两路，左路以 Jeff Dean 和 Andrew Ng 为首，重点突破 Deep Learning等等算法和应用，右路军由 Amit Singhal 领军，目标是构建 Knowledge Graph 基础设施。</p>
-<p>不得不提的大牛：</p>
-<ul>
-<li>Jeff Dean：  Google 诸位 Fellows 中，名列榜首，GFS 就是他的杰作。Andrew Ng 本科时，就读 CMU，后来去 MIT 追随 Mike Jordan。</li>
-<li>Andrew Ng：Mike Jordan 在 MIT 人缘不好，后来愤然出走 UC Berkeley。Andrew Ng 毫不犹豫追随导师，也去了 Berkeley。拿到博士后，任教 Stanford，是 Stanford 新生代教授中的佼佼者，同时兼职 Google。</li>
-<li>Amit Singhal：1996 年 Amit Singhal 从 Cornell University 拿到博士学位后，去 Bell Lab 工作，2000 年加盟 Google。据说他去 Google 面试时，对 Google 创始人 Sergey Brian 说，“Your engine is excellent, but let me rewirte it!”。Amit Singhal 目前任职 Google 高级副总裁，掌管 Google最核心的业务，搜索引擎。</li>
-</ul>
-]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[UFLDL深度学习笔记]]></title>
       <url>http://yoursite.com/2016/05/25/DeepLearningnotes/</url>
       <content type="html"><![CDATA[<h1 id="深度学习学习笔记"><a href="#深度学习学习笔记" class="headerlink" title="深度学习学习笔记"></a>深度学习学习笔记</h1><blockquote>
@@ -217,6 +211,28 @@
 <li><p>从实际使用方面：<br>据说hinton都说不清深度学习是怎么工作的，估计世界上很少有人能说出为什么它里面的物理意义吧。当前最好的办法就是，把dl当做黑箱子来用，基于经验和结果来调整参数。</p>
 </li>
 </ol>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[深度学习轶事]]></title>
+      <url>http://yoursite.com/2016/05/25/deeplearning%E8%BD%B6%E4%BA%8B/</url>
+      <content type="html"><![CDATA[<p>最近在研究深度学习，在阅读文献过程中，也接触到不少名人轶事，个人认为非常有意思，对理解整个人工智能发展历程有不少帮助。</p>
+<h2 id="Geoffrey-Hinton-amp-AI-revolution"><a href="#Geoffrey-Hinton-amp-AI-revolution" class="headerlink" title="Geoffrey Hinton &amp; AI revolution"></a>Geoffrey Hinton &amp; AI revolution</h2><blockquote>
+<p>从1950年图灵提出图灵测试开始，人们对人工智能有了很高的期待。然而，半个多世纪过去，人工智能除了能用一些神经网络、支持向量机等浅层学习算法拟合一些线性模型和少数简单非线性模型外，远远没有达到图灵测试的要求，甚至有人讲机器学习称为伪科学。直到Geoffrey Hinton在2006年提出深度学习，这一能够模拟人类处理“抽象概念”的算法模型…</p>
+</blockquote>
+<p>图灵测试：<br>隔墙对话，让人分不出对方是机器还是人类。<br>人工智能发展半个多世纪，离图灵测试相距甚远，直到深度学习的出现。<br>其基于抽象概念的深层次网络，丰富的参数，能够拟合复杂的非线性函数与模型，对大规模数据具有良好的表达处理能力。<br>这里不得不提的人物： </p>
+<ul>
+<li>Geoffrey Hinton：神经网络鼻祖，深度学习发明者，曾任教Cambridge、CMU，目前任教University of Toronto</li>
+<li>Yoshua Bengio：经历比较简单，McGill University 获得博士后，去 MIT 追随 Mike Jordan 做博士后。目前任教 University of Montreal。</li>
+</ul>
+<h2 id="Google-兵分两路"><a href="#Google-兵分两路" class="headerlink" title="Google 兵分两路"></a>Google 兵分两路</h2><p>Deep Learning引爆的这一波人工智能热潮，不仅在学术界，更在工业界产生不小的影响。相关的技术，在工业界犹如一把开山斧，等待着是各大公司一路披荆斩棘，动用资本和商业的强力手段，跑马圈地了。<br>Google作为全球从学术界转入工业界的翘楚与典范，自然不会错过这次机会。<br>Google兵分两路，左路以 Jeff Dean 和 Andrew Ng 为首，重点突破 Deep Learning等等算法和应用，右路军由 Amit Singhal 领军，目标是构建 Knowledge Graph 基础设施。</p>
+<p>不得不提的大牛：</p>
+<ul>
+<li>Jeff Dean：  Google 诸位 Fellows 中，名列榜首，GFS 就是他的杰作。Andrew Ng 本科时，就读 CMU，后来去 MIT 追随 Mike Jordan。</li>
+<li>Andrew Ng：Mike Jordan 在 MIT 人缘不好，后来愤然出走 UC Berkeley。Andrew Ng 毫不犹豫追随导师，也去了 Berkeley。拿到博士后，任教 Stanford，是 Stanford 新生代教授中的佼佼者，同时兼职 Google。</li>
+<li>Amit Singhal：1996 年 Amit Singhal 从 Cornell University 拿到博士学位后，去 Bell Lab 工作，2000 年加盟 Google。据说他去 Google 面试时，对 Google 创始人 Sergey Brian 说，“Your engine is excellent, but let me rewirte it!”。Amit Singhal 目前任职 Google 高级副总裁，掌管 Google最核心的业务，搜索引擎。</li>
+</ul>
 ]]></content>
     </entry>
     
