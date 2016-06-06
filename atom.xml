@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-06-03T07:00:44.726Z</updated>
+  <updated>2016-06-06T14:52:28.273Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,79 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>提高效率方法</title>
+    <link href="http://yoursite.com/2016/06/06/%E6%8F%90%E9%AB%98%E6%95%88%E7%8E%87%E6%96%B9%E6%B3%95/"/>
+    <id>http://yoursite.com/2016/06/06/提高效率方法/</id>
+    <published>2016-06-06T14:49:54.000Z</published>
+    <updated>2016-06-06T14:52:28.273Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;概要&quot;&gt;&lt;a href=&quot;#概要&quot; class=&quot;headerlink&quot; title=&quot;概要&quot;&gt;&lt;/a&gt;概要&lt;/h1&gt;&lt;p&gt;最近一篇名为&lt;a href=&quot;http://blog.jobbole.com/101608/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;程序员提高效率的一些建议&lt;/a&gt;的博文写的非常好，正好适合环境、精神和方法三个方面都一团糟的我，窃以为这些建议不仅仅适用于程序员，而且适用于大多数人，遂将其整理了一下，主要的思想脉络如下图所示：&lt;br&gt;&lt;img src=&quot;https://git.oschina.net/breezedong/figure_bed/raw/master/efficiency_improvement.png&quot; alt=&quot;efficiency_improvement&quot;&gt;&lt;/p&gt;
+&lt;p&gt;其主要从以下三个方面来提高效率：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;环境&lt;/strong&gt;，所谓孟母三迁，环境对一个人的影响力还是很大的，简洁、舒适的环境对效率来说，第一重要。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;精神&lt;/strong&gt;，健康合理的心理状态是不可或缺的，拖延症，焦虑感，合理时间安排都是精神状态的重要因素。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;方法&lt;/strong&gt;，有计划做事，团队合作，对效率提升效果显著。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;环境&quot;&gt;&lt;a href=&quot;#环境&quot; class=&quot;headerlink&quot; title=&quot;环境&quot;&gt;&lt;/a&gt;环境&lt;/h1&gt;&lt;h2 id=&quot;避免打扰&quot;&gt;&lt;a href=&quot;#避免打扰&quot; class=&quot;headerlink&quot; title=&quot;避免打扰&quot;&gt;&lt;/a&gt;避免打扰&lt;/h2&gt;&lt;p&gt;电话、短信、邮件等等东西，会不断的将你的时间切成碎片。&lt;strong&gt;当你完成复杂任务的时候，这种不断的打扰会让你的思维迟缓，而你从打断状态返回任务状态所需要的时间和精力成本会很大&lt;/strong&gt;。&lt;br&gt;所以，我们需要做到：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;手机免打扰状态，统一在休息时间查收信息。&lt;/li&gt;
+&lt;li&gt;桌面关闭社交软件，关闭无关网页。&lt;/li&gt;
+&lt;li&gt;会议安排在最开始，精简。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;精通工具&quot;&gt;&lt;a href=&quot;#精通工具&quot; class=&quot;headerlink&quot; title=&quot;精通工具&quot;&gt;&lt;/a&gt;精通工具&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;工欲善其事必先利其器。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;形成自己的工具链，无论是项目管理还是团队协作，还是专业编程软件。对于常用的软件，能用快捷键，尽量不要使用鼠标。让自己的行动跟上思维。&lt;/p&gt;
+&lt;h2 id=&quot;照顾身体&quot;&gt;&lt;a href=&quot;#照顾身体&quot; class=&quot;headerlink&quot; title=&quot;照顾身体&quot;&gt;&lt;/a&gt;照顾身体&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;身体是革命的本钱。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;以自己身体为代价的拼命行为，得不偿失。所以，我们需要有良好的习惯。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;多喝水。每天定量需要喝多少水。&lt;/li&gt;
+&lt;li&gt;定期运动。每周进行周期性的运动锻炼，有助于活跃思维，保持身体机能健康。&lt;/li&gt;
+&lt;li&gt;饮食清淡。尽量少吃辛辣咸的食物，有助于维持血压和血脂。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;工位精简&quot;&gt;&lt;a href=&quot;#工位精简&quot; class=&quot;headerlink&quot; title=&quot;工位精简&quot;&gt;&lt;/a&gt;工位精简&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;搜寻有用物品时，在没用的物品身上浪费的时间多于找到有用的物品本身。所以，尽量精简你的额工位和你的手机，电脑。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;定期整理工位，手机和PC。将常用的物品和软件，永远放在最显眼的地方，没有用的物品，尽量清理掉。&lt;/p&gt;
+&lt;h1 id=&quot;精神&quot;&gt;&lt;a href=&quot;#精神&quot; class=&quot;headerlink&quot; title=&quot;精神&quot;&gt;&lt;/a&gt;精神&lt;/h1&gt;&lt;p&gt;良好的精神状态，是工作效率的重要保障。犹如运动员保持良好的竞技状态一样。&lt;/p&gt;
+&lt;h2 id=&quot;定时休息&quot;&gt;&lt;a href=&quot;#定时休息&quot; class=&quot;headerlink&quot; title=&quot;定时休息&quot;&gt;&lt;/a&gt;定时休息&lt;/h2&gt;&lt;p&gt;人非机器，不是花在工作上的时间越多，收获就越多。因为注意力的保持是具有周期性的。这里推荐腾讯内部使用的番茄时间工作法，当然也可以设置自己的工作单位周期。我的时间周期为45/15，即工作45分钟，休息15分钟。&lt;/p&gt;
+&lt;h2 id=&quot;焦虑与拖延&quot;&gt;&lt;a href=&quot;#焦虑与拖延&quot; class=&quot;headerlink&quot; title=&quot;焦虑与拖延&quot;&gt;&lt;/a&gt;焦虑与拖延&lt;/h2&gt;&lt;p&gt;焦虑是学习最大的敌人。&lt;br&gt;焦虑和拖延往往是并发的。人在压力大，任务重要的时候，容易产生焦虑心理。焦虑后，就容易将任务拖延。&lt;br&gt;当我们面对复杂困难任务时，庞大的压力使人产生焦虑，焦虑让人产生逃避心理，宁愿去刷微博，facebook，新闻等讯息，也不愿意面对任务，从而产生拖延症。针对焦虑和拖延，我们采用以下两种办法进行有效的处理。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.zhihu.com/question/20153152&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;冥想&lt;/a&gt;，正念练习，数呼吸数，坚持10-15分钟。动作要领：脊椎坐直，肩膀放松，从一到十，往复循环。最好的方法是把注意力放在人中一带的皮肤处，觉知这地方经过的入息、出息，只是知道入出息，而不要太注意皮肤的触觉、或呼吸的其他特质。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.mifengtd.cn/articles/structured-procrastination.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;结构化拖延法&lt;/a&gt;，斯坦福哲学教授John Perry使用这个策略能把拖沓成性的人变成高效人士。&lt;strong&gt;结构化拖延法核心思想：将所有任务按照优先级列成list，并且不断更新。在最顶端任务的压力下，其完成其他任务。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;拖延的人往往误入歧途。他们想要减少任务，觉得如果只有很少事情可做的话，他们会立即抖擞精神，把事情搞定。这其实和拖沓之人的本性相反，反倒毁掉了他们更重要的去做事的驱动力。列表上任务越少就越显得重要，只有一个方法可以逃避这些任务，那就是什么事情都不做。这样他们就成了扶不上墙的烂泥，远非一个高效人士。&lt;/p&gt;
+&lt;h1 id=&quot;方法&quot;&gt;&lt;a href=&quot;#方法&quot; class=&quot;headerlink&quot; title=&quot;方法&quot;&gt;&lt;/a&gt;方法&lt;/h1&gt;&lt;p&gt;想要提高效率，好的方法必不可少。&lt;/p&gt;
+&lt;h2 id=&quot;计划&quot;&gt;&lt;a href=&quot;#计划&quot; class=&quot;headerlink&quot; title=&quot;计划&quot;&gt;&lt;/a&gt;计划&lt;/h2&gt;&lt;p&gt;制定清晰的计划&lt;/p&gt;
+&lt;h2 id=&quot;团队合作&quot;&gt;&lt;a href=&quot;#团队合作&quot; class=&quot;headerlink&quot; title=&quot;团队合作&quot;&gt;&lt;/a&gt;团队合作&lt;/h2&gt;&lt;p&gt;复杂的工作，独立完成会缺少效率。有其他人在的情况下，有如下优点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;头脑风暴，集中精神思考问题&lt;/li&gt;
+&lt;li&gt;设置任务时间节点，相互监督情况下，容易转化压力为动力&lt;/li&gt;
+&lt;li&gt;复杂任务分解，相互引导过程中，会加快问题的解决。&lt;br&gt;在团队合作工具的选择上，我再&lt;a href=&quot;https://asana.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;asana&lt;/a&gt;与&lt;a href=&quot;https://www.teambition.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;teambition&lt;/a&gt;之间选择了后者。虽然asana是团队协作工具的鼻祖，而且功能目前最为丰富；但是teambition为国内软件中最为好用，而且考虑到语言成本和网络强等因素，我选择后者。其实这个道理适用于所有的工具选择问题：工具本身基本功能都差不多，不必拘泥于哪一款，选择学习成本最低，适合自己的就行，用好最基本的，再选择换到更高级的工具。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;总结&quot;&gt;&lt;a href=&quot;#总结&quot; class=&quot;headerlink&quot; title=&quot;总结&quot;&gt;&lt;/a&gt;总结&lt;/h2&gt;&lt;p&gt;每天在冥想之余，花一点时间总结自己的工作及效率，看看有无改善之处。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;概要&quot;&gt;&lt;a href=&quot;#概要&quot; class=&quot;headerlink&quot; title=&quot;概要&quot;&gt;&lt;/a&gt;概要&lt;/h1&gt;&lt;p&gt;最近一篇名为&lt;a href=&quot;http://blog.jobbole.com/101608/&quot; target=&quot;_blank&quot; rel=&quot;e
+    
+    </summary>
+    
+      <category term="技术积累" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF%E7%A7%AF%E7%B4%AF/"/>
+    
+      <category term="方法杂谈" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF%E7%A7%AF%E7%B4%AF/%E6%96%B9%E6%B3%95%E6%9D%82%E8%B0%88/"/>
+    
+    
+      <category term="读书笔记" scheme="http://yoursite.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="效率方法" scheme="http://yoursite.com/tags/%E6%95%88%E7%8E%87%E6%96%B9%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>计算机网络回顾笔记</title>
